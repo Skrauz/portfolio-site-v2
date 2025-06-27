@@ -14,14 +14,14 @@ const toggleMobileMenu = () => {
     </NuxtLink>
     <!-- Desktop Nav -->
     <div class="flex items-center gap-8">
-      <NuxtLink to="/doswiadczenie" class="text-2xl font-bold  tracking-tighter">
-        <span class="text-theme-accent">/</span>Doświadczenie
+      <NuxtLink to="/doswiadczenie" class="text-2xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
+        <span class="text-theme-accent">/</span>Doświadczenie <span class="nav-underline"></span>
       </NuxtLink>
-      <NuxtLink to="/projekty" class="text-2xl font-bold ">
-        <span class="text-theme-accent">/</span>Projekty
+      <NuxtLink to="/projekty" class="text-2xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
+        <span class="text-theme-accent">/</span>Projekty <span class="nav-underline"></span>
       </NuxtLink>
-      <NuxtLink to="/kontakt" class="text-2xl font-bold ">
-        <span class="text-theme-accent">/</span>Kontakt
+      <NuxtLink to="/kontakt" class="text-2xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
+        <span class="text-theme-accent">/</span>Kontakt <span class="nav-underline"></span>
       </NuxtLink>
     </div>
     <!-- Mobile Hamburger Button -->
@@ -56,3 +56,29 @@ const toggleMobileMenu = () => {
     </div>
   </Transition>
 </template>
+<style scoped>
+.nav-link-underline {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.nav-underline {
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 3px;
+  background: var(--color-theme-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(.4, 0, .2, 1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.nav-link-underline:hover .nav-underline,
+.nav-link-underline:focus .nav-underline {
+  transform: scaleX(1);
+}
+</style>
