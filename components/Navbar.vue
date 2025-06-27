@@ -10,20 +10,20 @@ const toggleMobileMenu = () => {
   <nav class="common-container flex md:items-end items-center justify-between md:py-12 py-6">
     <!-- Logo -->
     <NuxtLink class="md:mb-1" to="/">
-      <NuxtImg class="w-[200px] lg:w-[250px]" src="/img/logo.png" />
+      <NuxtImg class="w-[180px] lg:w-[200px]" src="/img/logo.png" />
     </NuxtLink>
     <!-- Desktop Nav -->
-    <div class="items-center gap-4 lg:gap-8 hidden md:flex">
+    <div class="items-center gap-8 hidden md:flex">
       <NuxtLink to="/doswiadczenie"
-        class="text-2xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
+        class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
         <span class="text-theme-accent">/</span>Doświadczenie <span class="nav-underline"></span>
       </NuxtLink>
       <NuxtLink to="/projekty"
-        class="text-2xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
+        class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
         <span class="text-theme-accent">/</span>Projekty <span class="nav-underline"></span>
       </NuxtLink>
       <NuxtLink to="/kontakt"
-        class="text-2xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
+        class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
         <span class="text-theme-accent">/</span>Kontakt <span class="nav-underline"></span>
       </NuxtLink>
     </div>
