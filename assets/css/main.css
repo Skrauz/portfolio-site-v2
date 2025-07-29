@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -5,6 +6,8 @@
   --color-theme-dark-2: #222532;
   --color-theme-accent: #ff6e00;
   --color-theme-light: #e5e5e5;
+
+  --font-figtree: "Figtree", sans-serif;
 }
 
 @layer utilities {
@@ -14,5 +17,5 @@
 }
 
 body {
-  @apply text-white bg-theme-dark;
+  @apply text-white bg-theme-dark font-figtree;
 }
