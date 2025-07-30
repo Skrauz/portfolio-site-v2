@@ -8,7 +8,7 @@
 #canvas {
   width: 100%;
   height: 100%;
-  background: #181a1e;
+  background: #10151e;
 }
 
 body {
@@ -64,7 +64,7 @@ onMounted(() => {
 
   let pointerX, pointerY;
 
-  let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
+  let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0002 };
 
   let touchInput = false;
 
@@ -158,8 +158,8 @@ onMounted(() => {
   }
 
   function update() {
-    velocity.tx *= 0.96;
-    velocity.ty *= 0.96;
+    velocity.tx *= 0.92;
+    velocity.ty *= 0.92;
 
     velocity.x += (velocity.tx - velocity.x) * 0.08;
     velocity.y += (velocity.ty - velocity.y) * 0.08;

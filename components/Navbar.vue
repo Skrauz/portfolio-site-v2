@@ -7,7 +7,7 @@ const toggleMobileMenu = () => {
 
 </script>
 <template>
-  <nav class="common-container flex md:items-end items-center justify-between md:py-12 py-6">
+  <nav class="common-container w-full flex md:items-end items-center justify-between md:py-12 py-6">
     <!-- Logo -->
     <NuxtLink class="md:mb-1" to="/">
       <NuxtImg class="w-[180px] lg:w-[200px]" src="/img/logo.png" />
@@ -46,7 +46,7 @@ const toggleMobileMenu = () => {
   <Transition name="fade" enter-active-class="duration-150 ease-out" enter-from-class="opacity-0 -translate-x-36"
     enter-to-class="opacity-100 translate-x-0" leave-active-class="transition-all duration-150 ease-in"
     leave-from-class="opacity-100 translate-x-0" leave-to-class="opacity-0 -translate-x-36">
-    <nav v-if="isMobileMenuOpen" class="mobile-menu absolute top-0 left-0 w-[85%] h-screen bg-theme-dark-2 z-50">
+    <nav v-if="isMobileMenuOpen" class="mobile-menu absolute top-0 left-0 w-[75%] h-screen bg-theme-dark-2 z-50">
       <div class="ml-2">
         <div class="common-container flex items-center justify-between md:py-12 py-6">
           <h3 class="text-3xl font-bold tracking-tighter relative group">
