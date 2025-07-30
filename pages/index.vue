@@ -1,7 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <HomeHero></HomeHero>
+  <main>
+    <HomeHero></HomeHero>
+    <HomeAnimBackground></HomeAnimBackground>
+  </main>
 </template>
 
 <style scoped></style>

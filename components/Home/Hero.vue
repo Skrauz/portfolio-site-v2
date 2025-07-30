@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 <template>
   <div class="common-container">
-    <div class="hero mt-[260px]">
+    <div class="hero mt-[260px] max-w-max">
       <h1 class="text-6xl font-bold leading-[0.9] tracking-[-2px]">
         <span class="text-theme-accent">S</span>ebastian <br />
         <span class="text-theme-accent">Krauz</span>owicz
@@ -19,5 +19,6 @@
         <nuxt-img class="w-6" src="/img/contact-arrow.svg"></nuxt-img>
       </nuxt-link>
     </div>
+    <div class="h-[700px]"></div>
   </div>
 </template>
