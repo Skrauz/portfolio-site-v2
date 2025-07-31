@@ -64,7 +64,7 @@ onMounted(() => {
 
   let pointerX, pointerY;
 
-  let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0002 };
+  let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.00025 };
 
   let touchInput = false;
 

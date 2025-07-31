@@ -10,7 +10,7 @@
     </div>
 
     <div class="relative">
-      <div class="social-links absolute left-8 -mt-7">
+      <div class="social-links absolute left-8 -mt-1">
         <div class="flex flex-col items-center gap-2">
             <nuxt-link class="cursor-pointer opacity-70 transition-all hover:opacity-100" to="https://www.linkedin.com/in/skrauz/" target="_blank">
               <nuxt-img class="w-8" src="/img/socials/linkedin.svg"></nuxt-img>
@@ -21,9 +21,6 @@
             <nuxt-link class="cursor-pointer opacity-70 transition-all hover:opacity-100" to="https://www.instagram.com/skrauz_dev/" target="_blank">
               <nuxt-img class="w-8" src="/img/socials/instagram.svg"></nuxt-img>
             </nuxt-link>
-            <!-- <nuxt-link class="cursor-pointer opacity-70 transition-all hover:opacity-100" to="https://m.me/Skrauz" target="_blank">
-              <nuxt-img class="w-8" src="/img/socials/messenger.svg"></nuxt-img>
-            </nuxt-link> -->
             <nuxt-link class="cursor-pointer opacity-70 transition-all hover:opacity-100" to="mailto:krauzowiczs42@gmail.com" target="_blank">
               <nuxt-img class="w-8" src="/img/socials/mail.svg"></nuxt-img>
             </nuxt-link>
