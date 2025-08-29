@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 <template>
   <div
-    class="h-[calc(100dvh-96px)] md:h-[calc(100dvh-138px)] relative flex flex-col justify-center pb-20 md:pb-24"
+    class="h-[calc(100dvh-96px)] md:h-[calc(100dvh-138px)] relative flex flex-col justify-center pb-12 md:pb-24"
   >
     <div class="arrow-flex w-full absolute bottom-0 left-0 flex justify-center">
       <button class="p-4 mb-2 md:mb-7">
@@ -23,7 +23,7 @@
             >owicz
           </h1>
           <p class="uppercase mt-3 text-2xl italic text-theme-light">
-            Front-End Developer
+            Web Developer
           </p>
           <nuxt-link
             to="#kontakt"
