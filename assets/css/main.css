@@ -18,7 +18,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply text-white bg-theme-dark font-figtree;
-
 }

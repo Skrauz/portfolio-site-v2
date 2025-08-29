@@ -1,6 +1,6 @@
 <script setup lang="ts">
 function scrollToNextSection() {
-  const nextSection = document.getElementById('experience-section')
+  const nextSection = document.getElementById('doswiadczenie')
   if (nextSection) {
     nextSection.scrollIntoView({ behavior: 'smooth' })
   }
