@@ -1,8 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <HomeHero></HomeHero>
   <HomeAnimBackground></HomeAnimBackground>
+  <HomeHero></HomeHero>
+  <HomeExperience></HomeExperience>
   <div class="h-[700px]"></div>
 </template>
 
