@@ -1,10 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+function scrollToNextSection() {
+  const nextSection = document.getElementById('experience-section')
+  if (nextSection) {
+    nextSection.scrollIntoView({ behavior: 'smooth' })
+  }
+}</script>
 <template>
   <div
     class="h-[calc(100dvh-96px)] md:h-[calc(100dvh-138px)] relative flex flex-col justify-center pb-12 md:pb-24"
   >
     <div class="arrow-flex w-full absolute bottom-0 left-0 flex justify-center">
-      <button class="p-4 mb-2 md:mb-7">
+      <button @click="scrollToNextSection" class="p-4 mb-2 md:mb-7 cursor-pointer transition-transform hover:scale-120">
         <nuxt-img class="w-5" src="/img/hero-arrow.svg"></nuxt-img>
       </button>
     </div>
