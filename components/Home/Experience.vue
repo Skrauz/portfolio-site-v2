@@ -5,11 +5,11 @@
         <nuxt-img class="w-5" src="/img/stick_2.svg"></nuxt-img>
       </div>
       <div class="mt-1.5 animated-bar relative shrink-0 md:hidden">
-        <nuxt-img class="w-5" src="/img/stick_1.svg"></nuxt-img>
+        <nuxt-img class="w-6" src="/img/stick_3.svg"></nuxt-img>
       </div>
       <div class="experience">
         <h2 class="text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-2px] md:text-center"> Doświadczenie </h2>
-        <div class="mt-12 flex flex-col w-full gap-12 md:items-center">
+        <div class="mt-12 flex flex-col w-full gap-12 xl:mt-16 md:items-center">
           <div class="position max-w-xl">
             <h3 class="text-2xl font-bold leading-[0.9] tracking-[-2px] md:text-center">
               <span class="text-theme-accent">Web Developer</span> w 234.studio

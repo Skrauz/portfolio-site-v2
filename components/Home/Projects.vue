@@ -35,12 +35,12 @@ const projects = [
 ]
 </script>
 <template>
-  <div class="common-container" id="doswiadczenie">
+  <div class="common-container" id="projekty">
     <div
-      class="pt-12 mt-16 md:pt-20 md:mt-12 xl:mt-16 flex gap-4 md:gap-12 min-h-[400px] w-full justify-between mx-auto">
+      class="pt-12 mt-16 md:pt-20 md:mt-12 xl:mt-20 flex gap-4 md:gap-12 min-h-[400px] w-full justify-between mx-auto">
       <div class="w-full">
         <h2 class="text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-2px] text-center"> Projekty </h2>
-        <div class="projects gap-6 mt-6 md:mt-12 xl:mt-16 grid grid-cols-1 lg:grid-cols-2">
+        <div class="projects gap-6 mt-6 md:mt-12 xl:mt-20 grid grid-cols-1 lg:grid-cols-2">
           <div class="project md:p-8 p-7 relative group h-max" v-for="(project, idx) in projects" :key="project.name">
             <div class="absolute top-0 left-0 size-full p-3 -z-10">
               <div class="bg-white transition-all opacity-0 group-hover:opacity-5 size-full rounded-2xl"></div>

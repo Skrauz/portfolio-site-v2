@@ -18,9 +18,9 @@ function scrollToNextSection() {
           <h1 class="text-6xl font-bold text-center leading-[0.9] tracking-[-2px]">
             <span class="text-theme-accent">&nbsp;S</span>ebastian<span class="text-theme-accent"> Krauz</span>owicz
           </h1>
-          <p class="uppercase mt-3 text-2xl italic text-theme-light"> Web Developer </p>
+          <p class="uppercase mt-6 md:mt-3 text-2xl italic text-center text-theme-light">Front-End & Web Developer</p>
           <nuxt-link to="#kontakt"
-            class="mt-4 transition-all hover:opacity-80 rounded-full py-1.5 px-4 flex items-center gap-2.5 bg-theme-accent text-theme-dark max-w-max">
+            class="mt-6 md:mt-4 transition-all hover:opacity-80 rounded-full py-1.5 px-4 flex items-center gap-2.5 bg-theme-accent text-theme-dark max-w-max">
             <p class="font-bold text-2xl leading-[1.2] tracking-tight"> Kontakt </p>
             <nuxt-img class="w-6" src="/img/contact-arrow.svg"></nuxt-img>
           </nuxt-link>

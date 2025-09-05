@@ -16,7 +16,7 @@ const toggleMobileMenu = () => {
         class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
         <span class="text-theme-accent">/</span>Doświadczenie <span class="nav-underline"></span>
       </NuxtLink>
-      <NuxtLink to="/projekty"
+      <NuxtLink to="#projekty"
         class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
         <span class="text-theme-accent">/</span>Projekty <span class="nav-underline"></span>
       </NuxtLink>
@@ -28,7 +28,7 @@ const toggleMobileMenu = () => {
     <!-- Mobile Hamburger Button -->
     <button @click="toggleMobileMenu" class="md:hidden p-2 cursor-pointer transition-colors hover:text-theme-light"
       aria-label="Toggle Menu">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-text-dark-1" fill="none" viewBox="0 0 24 24"
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-6 text-text-dark-1" fill="none" viewBox="0 0 24 24"
         stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
@@ -50,7 +50,7 @@ const toggleMobileMenu = () => {
           <h3 class="text-3xl font-bold tracking-tighter relative group"> Menu </h3>
           <button @click="toggleMobileMenu" class="p-2 cursor-pointer transition-colors hover:text-theme-light"
             aria-label="Close Menu">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-6" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
@@ -62,11 +62,11 @@ const toggleMobileMenu = () => {
               class="text-xl font-bold tracking-tighter relative group transition-colors hover:text-theme-light">
               <span class="text-theme-accent">/</span>Doświadczenie
             </NuxtLink>
-            <NuxtLink to="/projekty"
+            <NuxtLink @click="toggleMobileMenu" to="#projekty"
               class="text-xl font-bold tracking-tighter relative group transition-colors hover:text-theme-light">
               <span class="text-theme-accent">/</span>Projekty
             </NuxtLink>
-            <NuxtLink to="/kontakt"
+            <NuxtLink @click="toggleMobileMenu" to="#kontakt"
               class="text-xl font-bold tracking-tighter relative group transition-colors hover:text-theme-light">
               <span class="text-theme-accent">/</span>Kontakt
             </NuxtLink>
@@ -75,16 +75,16 @@ const toggleMobileMenu = () => {
         <div class="py-6 common-container absolute bottom-0 left-0">
           <div class="flex items-center gap-4">
             <nuxt-link class="cursor-pointer" to="https://www.linkedin.com/in/skrauz/" target="_blank">
-              <nuxt-img class="w-8" src="/img/socials/linkedin.svg"></nuxt-img>
+              <nuxt-img class="w-6" src="/img/socials/linkedin.svg"></nuxt-img>
             </nuxt-link>
             <nuxt-link class="cursor-pointer" to="https://github.com/Skrauz" target="_blank">
-              <nuxt-img class="w-8" src="/img/socials/github.svg"></nuxt-img>
+              <nuxt-img class="w-6" src="/img/socials/github.svg"></nuxt-img>
             </nuxt-link>
             <nuxt-link class="cursor-pointer" to="https://www.instagram.com/skrauz_dev/" target="_blank">
-              <nuxt-img class="w-8" src="/img/socials/instagram.svg"></nuxt-img>
+              <nuxt-img class="w-6" src="/img/socials/instagram.svg"></nuxt-img>
             </nuxt-link>
             <nuxt-link class="cursor-pointer pt-1.5" to="mailto:krauzowiczs42@gmail.com" target="_blank">
-              <nuxt-img class="w-8" src="/img/socials/mail.svg"></nuxt-img>
+              <nuxt-img class="w-6" src="/img/socials/mail.svg"></nuxt-img>
             </nuxt-link>
           </div>
         </div>
