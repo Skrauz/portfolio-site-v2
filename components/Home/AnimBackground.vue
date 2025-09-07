@@ -158,11 +158,14 @@ onMounted(() => {
   }
 
   function update() {
+
+    const ANIMATION_VELOCITY = 0.01;
+
     velocity.tx *= 0.92;
     velocity.ty *= 0.92;
 
-    velocity.x += (velocity.tx - velocity.x) * 0.08;
-    velocity.y += (velocity.ty - velocity.y) * 0.08;
+    velocity.x += (velocity.tx - velocity.x) * ANIMATION_VELOCITY;
+    velocity.y += (velocity.ty - velocity.y) * ANIMATION_VELOCITY;
 
     stars.forEach((star) => {
       star.x += velocity.x * star.z;
