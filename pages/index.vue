@@ -5,9 +5,7 @@
   <HomeHero></HomeHero>
   <HomeExperience></HomeExperience>
   <HomeProjects></HomeProjects>
-
-  <!-- remove later v -->
-  <div class="h-[700px]"></div>
+  <HomeContact></HomeContact>
 </template>
 
 <style scoped></style>

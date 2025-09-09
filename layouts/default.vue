@@ -5,7 +5,8 @@
       <slot>
       </slot>
     </main>
-    <!-- <Footer></Footer> -->
+    <Footer></Footer>
+    <BackToTopButton></BackToTopButton>
   </div>
 </template>
 <style lang="css">
