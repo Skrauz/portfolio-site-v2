@@ -5,8 +5,9 @@
 @theme {
   /* --color-theme-dark: #181a1e; */
   --color-theme-dark: #030209;
-  --color-theme-dark-2: #16161c;
+  --color-theme-dark-2: #10151e;
   --color-theme-accent: #ff6e00;
+  --color-theme-accent-hover: #e65705;
   --color-theme-light: #e5e5e5;
 
   --font-figtree: "Figtree", sans-serif;

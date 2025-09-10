@@ -1,6 +1,6 @@
 <template>
-  <div class="fixed size-full top-0 left-0 -z-10">
-    <canvas id="canvas"></canvas>
+  <div class="fixed size-full top-0 left-0 -z-10 bg-theme-dark-2">
+    <canvas class="opacity-80" id="canvas"></canvas>
   </div>
 </template>
 
@@ -47,7 +47,7 @@ onMounted(() => {
  .  *  move your mouse to over the stars   .
  *  .  .   change these values:   .  *
    .      * .        .          * .       */
-  const STAR_COLOR = "#ddd";
+  const STAR_COLOR = "#fff";
   const STAR_SIZE = 3;
   const STAR_MIN_SCALE = 0.2;
   const OVERFLOW_THRESHOLD = 50;

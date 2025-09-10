@@ -7,4 +7,10 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   vite: { plugins: [tailwindcss()] },
   modules: ["@nuxt/image"],
+
+  runtimeConfig: {
+    public: {
+      contactEmail: 'contact@skrauz.dev'
+    }
+  }
 });

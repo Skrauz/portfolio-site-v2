@@ -4,7 +4,9 @@ function scrollToNextSection() {
   if (nextSection) {
     nextSection.scrollIntoView({ behavior: 'smooth' })
   }
-}</script>
+}
+const publicConfig = useRuntimeConfig().public;
+</script>
 <template>
   <div class="h-[calc(100dvh-96px)] md:h-[calc(100dvh-138px)] relative flex flex-col justify-center pb-12 md:pb-24">
     <div class="arrow-flex w-full absolute bottom-0 left-0 flex justify-center">
@@ -20,7 +22,7 @@ function scrollToNextSection() {
           </h1>
           <p class="uppercase mt-6 md:mt-3 text-2xl italic text-center text-theme-light">Front-End & Web Developer</p>
           <nuxt-link to="#kontakt"
-            class="mt-6 md:mt-4 transition-all hover:opacity-80 rounded-full py-1.5 px-4 flex items-center gap-2.5 bg-theme-accent text-theme-dark max-w-max">
+            class="mt-6 md:mt-4 transition-colors hover:bg-theme-accent-hover rounded-full py-1.5 px-4 flex items-center gap-2.5 bg-theme-accent text-theme-dark max-w-max">
             <p class="font-bold text-2xl leading-[1.2] tracking-tight"> Kontakt </p>
             <nuxt-img class="w-6" src="/img/contact-arrow.svg"></nuxt-img>
           </nuxt-link>
@@ -41,7 +43,7 @@ function scrollToNextSection() {
             <nuxt-img class="w-8" src="/img/socials/instagram.svg"></nuxt-img>
           </nuxt-link>
           <nuxt-link class="cursor-pointer opacity-70 transition-all hover:opacity-100"
-            to="mailto:krauzowiczs42@gmail.com" target="_blank">
+            :to="`mailto:${publicConfig.contactEmail}`" target="_blank">
             <nuxt-img class="w-8" src="/img/socials/mail.svg"></nuxt-img>
           </nuxt-link>
         </div>

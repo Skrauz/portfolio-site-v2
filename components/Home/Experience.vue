@@ -10,51 +10,23 @@
       <div class="experience">
         <h2 class="text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-2px] md:text-center"> Doświadczenie </h2>
         <div class="mt-12 flex flex-col w-full gap-12 xl:mt-16 md:items-center">
-          <div class="position max-w-xl">
+          <div
+            v-for="(position, idx) in positions"
+            :key="position.company + position.role"
+            class="position max-w-xl"
+          >
             <h3 class="text-2xl font-bold leading-[0.9] tracking-[-2px] md:text-center">
-              <span class="text-theme-accent">Web Developer</span> w 234.studio
+              <span class="text-theme-accent">{{ position.role }}</span> w {{ position.company }}
             </h3>
-            <p class="mt-1 text-lg italic text-theme-light uppercase md:text-center">2023 - 2025</p>
+            <p class="mt-1 text-lg italic text-theme-light uppercase md:text-center">{{ position.period }}</p>
             <ul class="technologies flex flex-wrap gap-3 mt-3 md:justify-center">
-
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Nuxt</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Angular</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Typescript
+              <li
+                v-for="tech in position.technologies"
+                :key="tech"
+                class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6"
+              >
+                {{ tech }}
               </li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">TailwindCSS
-              </li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Figma</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Directus</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Contentful
-              </li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">HTML</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">SCSS</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Prestashop
-              </li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Git</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">npm</li>
-            </ul>
-          </div>
-          <div class="position max-w-xl">
-            <h3 class="text-2xl font-bold leading-[0.9] tracking-[-2px] md:text-center">
-              <span class="text-theme-accent">Freelance Web Developer</span> w Skrauz.dev
-            </h3>
-            <p class="mt-1 text-lg italic text-theme-light uppercase md:text-center">2023 - Present</p>
-            <ul class="technologies flex flex-wrap gap-3 mt-3 md:justify-center">
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Nuxt</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Penpot</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">TailwindCSS
-              </li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Greensock</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Contentful
-              </li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Angular</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Typescript
-              </li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">HTML</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">SCSS</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">Git</li>
-              <li class="max-w-max cursor-default rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">npm</li>
             </ul>
           </div>
         </div>
@@ -66,6 +38,19 @@
   </div>
 </template>
 <script setup lang="ts">
-
+const positions = [
+  {
+    company: '234.studio',
+    role: 'Web Developer',
+    period: '2023 - 2025',
+    technologies: ['Nuxt', 'Angular', 'Typescript', 'TailwindCSS', 'Figma', 'Directus', 'Contentful', 'HTML', 'SCSS', 'Prestashop', 'Git', 'npm'],
+  },
+  {
+    company: 'Skrauz.dev',
+    role: 'Freelance Web Developer',
+    period: '2023 - Present',
+    technologies: ['Nuxt', 'Penpot', 'TailwindCSS', 'Greensock', 'Contentful', 'Angular', 'Typescript', 'HTML', 'SCSS', 'Git', 'npm'],
+  },
+];
 </script>
 <style scoped></style>

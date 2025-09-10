@@ -3,6 +3,7 @@ const isMobileMenuOpen = ref(false);
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;
 };
+const publicConfig = useRuntimeConfig().public;
 </script>
 <template>
   <nav class="common-container w-full flex md:items-end items-center justify-between md:py-12 py-6">
@@ -13,15 +14,15 @@ const toggleMobileMenu = () => {
     <!-- Desktop Nav -->
     <div class="items-center gap-8 hidden md:flex">
       <NuxtLink to="#doswiadczenie"
-        class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
+        class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
         <span class="text-theme-accent">/</span>Doświadczenie <span class="nav-underline"></span>
       </NuxtLink>
       <NuxtLink to="#projekty"
-        class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
+        class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
         <span class="text-theme-accent">/</span>Projekty <span class="nav-underline"></span>
       </NuxtLink>
       <NuxtLink to="/kontakt"
-        class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors hover:text-theme-light">
+        class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
         <span class="text-theme-accent">/</span>Kontakt <span class="nav-underline"></span>
       </NuxtLink>
     </div>
@@ -83,7 +84,7 @@ const toggleMobileMenu = () => {
             <nuxt-link class="cursor-pointer" to="https://www.instagram.com/skrauz_dev/" target="_blank">
               <nuxt-img class="w-6" src="/img/socials/instagram.svg"></nuxt-img>
             </nuxt-link>
-            <nuxt-link class="cursor-pointer pt-1.5" to="mailto:krauzowiczs42@gmail.com" target="_blank">
+            <nuxt-link class="cursor-pointer pt-1.5" :to="`mailto:${publicConfig.contactEmail}`" target="_blank">
               <nuxt-img class="w-6" src="/img/socials/mail.svg"></nuxt-img>
             </nuxt-link>
           </div>

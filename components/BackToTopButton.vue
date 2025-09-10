@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
     <button v-if="buttonVisible" @click="scrollToTop"
-      class="cursor-pointer fixed bottom-4 right-4 md:bottom-6 md:right-8 z-50 size-12 flex justify-center p-2 rounded-full bg-theme-accent text-theme-dark shadow-lg transition-opacity hover:opacity-80"
+      class="cursor-pointer fixed bottom-4 right-4 md:bottom-6 md:right-8 z-50 size-12 flex justify-center p-2 rounded-full bg-theme-accent text-theme-dark shadow-lg transition-colors hover:bg-theme-accent-hover"
       aria-label="Back to top">
       <nuxt-img class="w-4" src="/img/arrow-up.svg"></nuxt-img>
     </button>
