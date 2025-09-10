@@ -8,7 +8,7 @@ function scrollToNextSection() {
 const publicConfig = useRuntimeConfig().public;
 </script>
 <template>
-  <div class="h-[calc(100dvh-96px)] md:h-[calc(100dvh-138px)] relative flex flex-col justify-center pb-12 md:pb-24">
+  <div class="h-[calc(100dvh-96px)] md:h-[calc(100dvh-138px)] relative flex flex-col justify-center pb-8 md:pb-24">
     <div class="arrow-flex w-full absolute bottom-0 left-0 flex justify-center">
       <button @click="scrollToNextSection" class="p-4 mb-2 md:mb-7 cursor-pointer transition-transform hover:scale-120">
         <nuxt-img class="w-5" src="/img/hero-arrow.svg"></nuxt-img>
@@ -22,9 +22,9 @@ const publicConfig = useRuntimeConfig().public;
           </h1>
           <p class="uppercase mt-6 md:mt-3 text-2xl italic text-center text-theme-light">Front-End & Web Developer</p>
           <nuxt-link to="#kontakt"
-            class="mt-6 md:mt-4 transition-colors hover:bg-theme-accent-hover rounded-full py-1.5 px-4 flex items-center gap-2.5 bg-theme-accent text-theme-dark max-w-max">
+            class="mt-6 md:mt-4 transition-colors hover:bg-theme-accent-hover rounded-full py-1.5 px-6 flex items-center gap-2.5 bg-theme-accent text-theme-dark max-w-max">
             <p class="font-bold text-2xl leading-[1.2] tracking-tight"> Kontakt </p>
-            <nuxt-img class="w-6" src="/img/contact-arrow.svg"></nuxt-img>
+            <!-- <nuxt-img class="w-6" src="/img/contact-arrow.svg"></nuxt-img> -->
           </nuxt-link>
         </div>
       </div>
