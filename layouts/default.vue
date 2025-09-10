@@ -1,5 +1,6 @@
 <template>
   <div>
+    <AnimBackground></AnimBackground>
     <Navbar></Navbar>
     <main>
       <slot>

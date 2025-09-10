@@ -6,11 +6,17 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ["~/assets/css/main.css"],
   vite: { plugins: [tailwindcss()] },
-  modules: ["@nuxt/image"],
+  modules: ["@nuxt/image", "@nuxt/content"],
+
+  content: {
+    renderer: {
+      anchorLinks: false,
+    }
+  },
 
   runtimeConfig: {
     public: {
-      contactEmail: 'contact@skrauz.dev'
-    }
-  }
+      contactEmail: "contact@skrauz.dev",
+    },
+  },
 });

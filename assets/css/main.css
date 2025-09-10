@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
   /* --color-theme-dark: #181a1e; */
@@ -24,5 +25,5 @@ html {
 }
 
 body {
-  @apply text-white bg-theme-dark font-figtree;
+  @apply text-white bg-theme-dark-2 font-figtree;
 }
