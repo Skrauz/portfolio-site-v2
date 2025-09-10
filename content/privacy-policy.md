@@ -1,11 +1,3 @@
----
-title: "Polityka prywatności"
-description: "Informacje o ochronie prywatności na stronie portfolio."
-date: 2025-09-10
----
-
-<!-- # Polityka prywatności -->
-
 **Ostatnia aktualizacja:** 2025-09-10
 
 Niniejsza strona internetowa została zaprojektowana tak, aby nie gromadziła ani nie przetwarzała żadnych danych osobowych użytkowników w sposób automatyczny.

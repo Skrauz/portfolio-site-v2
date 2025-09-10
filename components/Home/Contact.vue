@@ -87,8 +87,7 @@ const publicConfig = useRuntimeConfig().public;
   z-index: 1;
 }
 
-.email-link-underline:hover .email-underline,
-.email-link-underline:focus .email-underline {
+.email-link-underline:hover .email-underline {
   transform: scaleX(1);
 }
 </style>

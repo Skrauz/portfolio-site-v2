@@ -13,15 +13,15 @@ const publicConfig = useRuntimeConfig().public;
     </NuxtLink>
     <!-- Desktop Nav -->
     <div class="items-center gap-8 hidden md:flex">
-      <NuxtLink to="#doswiadczenie"
+      <NuxtLink to="/#doswiadczenie"
         class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
         <span class="text-theme-accent">/</span>Doświadczenie <span class="nav-underline"></span>
       </NuxtLink>
-      <NuxtLink to="#projekty"
+      <NuxtLink to="/#projekty"
         class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
         <span class="text-theme-accent">/</span>Projekty <span class="nav-underline"></span>
       </NuxtLink>
-      <NuxtLink to="#kontakt"
+      <NuxtLink to="/#kontakt"
         class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
         <span class="text-theme-accent">/</span>Kontakt <span class="nav-underline"></span>
       </NuxtLink>
@@ -59,15 +59,15 @@ const publicConfig = useRuntimeConfig().public;
         </div>
         <div class="common-container">
           <div class="flex flex-col gap-4">
-            <NuxtLink @click="toggleMobileMenu" to="#doswiadczenie"
+            <NuxtLink @click="toggleMobileMenu" to="/#doswiadczenie"
               class="text-xl font-bold tracking-tighter relative group transition-colors hover:text-theme-light">
               <span class="text-theme-accent">/</span>Doświadczenie
             </NuxtLink>
-            <NuxtLink @click="toggleMobileMenu" to="#projekty"
+            <NuxtLink @click="toggleMobileMenu" to="/#projekty"
               class="text-xl font-bold tracking-tighter relative group transition-colors hover:text-theme-light">
               <span class="text-theme-accent">/</span>Projekty
             </NuxtLink>
-            <NuxtLink @click="toggleMobileMenu" to="#kontakt"
+            <NuxtLink @click="toggleMobileMenu" to="/#kontakt"
               class="text-xl font-bold tracking-tighter relative group transition-colors hover:text-theme-light">
               <span class="text-theme-accent">/</span>Kontakt
             </NuxtLink>
@@ -114,8 +114,7 @@ const publicConfig = useRuntimeConfig().public;
   z-index: 1;
 }
 
-.nav-link-underline:hover .nav-underline,
-.nav-link-underline:focus .nav-underline {
+.nav-link-underline:hover .nav-underline {
   transform: scaleX(1);
 }
 </style>
