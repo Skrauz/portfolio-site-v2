@@ -30,19 +30,19 @@ const publicConfig = useRuntimeConfig().public;
       </div>
       <div class="social-links absolute left-8 -mt-3 hidden md:block top-0">
         <div class="flex flex-col items-center gap-3">
-          <nuxt-link class="cursor-pointer opacity-70 transition-all hover:opacity-100"
+          <nuxt-link class="cursor-pointer opacity-80 transition-all hover:opacity-100"
             to="https://www.linkedin.com/in/skrauz/" target="_blank">
             <nuxt-img class="w-8" src="/img/socials/linkedin.svg"></nuxt-img>
           </nuxt-link>
-          <nuxt-link class="cursor-pointer opacity-70 transition-all hover:opacity-100" to="https://github.com/Skrauz"
+          <nuxt-link class="cursor-pointer opacity-80 transition-all hover:opacity-100" to="https://github.com/Skrauz"
             target="_blank">
             <nuxt-img class="w-8" src="/img/socials/github.svg"></nuxt-img>
           </nuxt-link>
-          <nuxt-link class="cursor-pointer opacity-70 transition-all hover:opacity-100"
+          <nuxt-link class="cursor-pointer opacity-80 transition-all hover:opacity-100"
             to="https://www.instagram.com/skrauz_dev/" target="_blank">
             <nuxt-img class="w-8" src="/img/socials/instagram.svg"></nuxt-img>
           </nuxt-link>
-          <nuxt-link class="cursor-pointer opacity-70 transition-all hover:opacity-100"
+          <nuxt-link class="cursor-pointer opacity-80 transition-all hover:opacity-100"
             :to="`mailto:${publicConfig.contactEmail}`" target="_blank">
             <nuxt-img class="w-8" src="/img/socials/mail.svg"></nuxt-img>
           </nuxt-link>
