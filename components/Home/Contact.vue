@@ -3,8 +3,8 @@ const publicConfig = useRuntimeConfig().public;
 </script>
 <template>
   <div class="mt-20 md:mt-24">
-    <div class="h-[100dvh] common-container">
-      <div class="flex flex-col justify-between py-8 h-full">
+    <div class="h-[100dvh] common-container" id="kontakt">
+      <div class="flex flex-col justify-between py-8 h-full items-center">
         <div class="relative shrink-0 md:block hidden">
           <nuxt-img class="h-6" src="/img/contact_stick.svg"></nuxt-img>
         </div>

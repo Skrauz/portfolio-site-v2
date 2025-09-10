@@ -21,7 +21,7 @@ const publicConfig = useRuntimeConfig().public;
         class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
         <span class="text-theme-accent">/</span>Projekty <span class="nav-underline"></span>
       </NuxtLink>
-      <NuxtLink to="/kontakt"
+      <NuxtLink to="#kontakt"
         class="text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
         <span class="text-theme-accent">/</span>Kontakt <span class="nav-underline"></span>
       </NuxtLink>
