@@ -5,7 +5,7 @@ const projects = [
     description:
       'Excepturi magnam sed eum est unde at facere iure. Nihil quisquam nisi ex consequuntur molestiae reprehenderit et. Omnis fugiat ex temporibus aperiam odio repellendus. Cupiditate cupiditate commodi consequatur. Ut sint occaecati corporis natus placeat non iusto et. Vel quae repudiandae suscipit beatae.',
     image: '/img/projects/portfoliov2.jpg',
-    technologies: ['Nuxt', 'TailwindCSS', 'SCSS', 'Typescript', 'Greensock'],
+    technologies: ['Nuxt', 'TailwindCSS', 'SCSS', 'Typescript'],
     link: 'https://skrauz.dev',
   },
   {
