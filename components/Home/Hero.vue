@@ -10,7 +10,7 @@ const publicConfig = useRuntimeConfig().public;
 import { gsap } from "gsap";
 
 // onMounted(() => {
-//   const elements = document.querySelectorAll('.scroll-fade-in')
+//   const elements = document.querySelectorAll('.fade-in')
 
 //   elements.forEach(el => {
 //     gsap.from(el, {
@@ -34,7 +34,7 @@ import { gsap } from "gsap";
       <div class="common-container">
         <div class="hero flex flex-col items-center">
           <h1
-            class="text-6xl font-bold text-center leading-[0.9] tracking-[-2px] scroll-fade-in"
+            class="text-6xl font-bold text-center leading-[0.9] tracking-[-2px] fade-in"
           >
             <span class="text-theme-accent">&nbsp;S</span>ebastian<span
               class="text-theme-accent"
@@ -43,13 +43,13 @@ import { gsap } from "gsap";
             >owicz
           </h1>
           <p
-            class="scroll-fade-in uppercase mt-6 md:mt-3 text-2xl italic text-center text-theme-light"
+            class="fade-in uppercase mt-6 md:mt-3 text-2xl italic text-center text-theme-light"
           >
             Front-End & Web Developer
           </p>
           <nuxt-link
             to="#kontakt"
-            class="scroll-fade-in mt-6 md:mt-4 transition-colors hover:bg-theme-accent-hover rounded-full py-1.5 px-6 flex items-center gap-2.5 bg-theme-accent text-theme-dark max-w-max"
+            class="fade-in mt-6 md:mt-4 transition-colors hover:bg-theme-accent-hover rounded-full py-1.5 px-6 flex items-center gap-2.5 bg-theme-accent text-theme-dark max-w-max"
           >
             <p class="font-bold text-2xl leading-[1.2] tracking-tight">
               Kontakt
@@ -61,7 +61,7 @@ import { gsap } from "gsap";
         <div class="flex flex-col items-center gap-3">
           <div class="opacity-75 transition-opacity hover:opacity-100">
             <nuxt-link
-              class="scroll-fade-in block cursor-pointer"
+              class="fade-in block cursor-pointer"
               to="https://www.linkedin.com/in/skrauz/"
               target="_blank"
             >
@@ -70,7 +70,7 @@ import { gsap } from "gsap";
           </div>
           <div class="opacity-75 transition-opacity hover:opacity-100">
             <nuxt-link
-              class="scroll-fade-in block cursor-pointer"
+              class="fade-in block cursor-pointer"
               to="https://github.com/Skrauz"
               target="_blank"
             >
@@ -79,7 +79,7 @@ import { gsap } from "gsap";
           </div>
           <div class="opacity-75 transition-opacity hover:opacity-100">
             <nuxt-link
-              class="scroll-fade-in block cursor-pointer"
+              class="fade-in block cursor-pointer"
               to="https://www.instagram.com/skrauz_dev/"
               target="_blank"
             >
@@ -88,7 +88,7 @@ import { gsap } from "gsap";
           </div>
           <div class="opacity-75 transition-opacity hover:opacity-100">
             <nuxt-link
-              class="scroll-fade-in block cursor-pointer"
+              class="fade-in block cursor-pointer"
               :to="`mailto:${publicConfig.contactEmail}`"
               target="_blank"
             >
@@ -100,7 +100,7 @@ import { gsap } from "gsap";
     </div>
 
     <div
-      class="scroll-fade-in arrow-flex w-full absolute bottom-0 left-0 flex justify-center"
+      class="fade-in arrow-flex w-full absolute bottom-0 left-0 flex justify-center"
     >
       <button
         @click="scrollToNextSection"
