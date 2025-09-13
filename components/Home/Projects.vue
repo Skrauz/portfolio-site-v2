@@ -82,7 +82,7 @@ onMounted(() => {
             </div>
             <nuxt-img
               src="/img/frame_small.svg"
-              class="-z-10 absolute top-0 left-0"
+              class="-z-10 absolute top-0 left-0 md:w-[230px] w-[250px]"
             ></nuxt-img>
             <template v-if="project.link">
               <nuxt-link
