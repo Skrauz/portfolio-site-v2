@@ -18,7 +18,6 @@ onMounted(() => {
     ...fadeInAnimation,
     scrollTrigger: {
       start: "top 80%",
-      toggleActions: "play none none reverse",
     },
   });
 
@@ -34,7 +33,6 @@ onMounted(() => {
       scrollTrigger: {
         trigger: el,
         start: "top 80%",
-        toggleActions: "play none none reverse",
       },
     });
   });
