@@ -29,15 +29,15 @@ const publicConfig = useRuntimeConfig().public;
           </div>
           <div class="socials-panel flex flex-col items-center">
             <div class="social-links flex items-center gap-3">
-              <nuxt-link class="cursor-pointer md:opacity-80 transition-all hover:opacity-100"
+              <nuxt-link class="cursor-pointer md:opacity-75 transition-all hover:opacity-100"
                 to="https://www.linkedin.com/in/skrauz/" target="_blank">
                 <nuxt-img class="w-8" src="/img/socials/linkedin.svg"></nuxt-img>
               </nuxt-link>
-              <nuxt-link class="cursor-pointer md:opacity-80 transition-all hover:opacity-100"
+              <nuxt-link class="cursor-pointer md:opacity-75 transition-all hover:opacity-100"
                 to="https://github.com/Skrauz" target="_blank">
                 <nuxt-img class="w-8" src="/img/socials/github.svg"></nuxt-img>
               </nuxt-link>
-              <nuxt-link class="cursor-pointer md:opacity-80 transition-all hover:opacity-100"
+              <nuxt-link class="cursor-pointer md:opacity-75 transition-all hover:opacity-100"
                 to="https://www.instagram.com/skrauz_dev/" target="_blank">
                 <nuxt-img class="w-8" src="/img/socials/instagram.svg"></nuxt-img>
               </nuxt-link>
