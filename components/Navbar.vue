@@ -5,30 +5,44 @@ const toggleMobileMenu = () => {
 };
 const publicConfig = useRuntimeConfig().public;
 
+import { gsap } from "gsap";
+
+onMounted(() => {
+  const navbarFadeInElements = gsap.utils.toArray(".navbar-fade-in").filter((el: any) => {
+    return el.offsetParent !== null;
+  });
+
+  gsap.from(navbarFadeInElements, {
+    ...fadeInAnimation,
+    scrollTrigger: {
+      start: "top 80%",
+    },
+  });
+});
 </script>
 <template>
   <nav class="common-container w-full flex md:items-end items-center justify-between md:py-12 py-6">
     <!-- Logo -->
-    <NuxtLink class="fade-in md:mb-1" to="/">
+    <NuxtLink class="navbar-fade-in md:mb-1" to="/">
       <NuxtImg class="w-[180px] lg:w-[200px]" src="/img/logo.png" />
     </NuxtLink>
     <!-- Desktop Nav -->
     <div class="items-center gap-8 hidden md:flex">
       <NuxtLink to="/#doswiadczenie"
-        class="fade-in text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
+        class="navbar-fade-in text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
         <span class="text-theme-accent">/</span>Doświadczenie <span class="nav-underline"></span>
       </NuxtLink>
       <NuxtLink to="/#projekty"
-        class="fade-in text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
+        class="navbar-fade-in text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
         <span class="text-theme-accent">/</span>Projekty <span class="nav-underline"></span>
       </NuxtLink>
       <NuxtLink to="/#kontakt"
-        class="fade-in text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
+        class="navbar-fade-in text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
         <span class="text-theme-accent">/</span>Kontakt <span class="nav-underline"></span>
       </NuxtLink>
     </div>
     <!-- Mobile Hamburger Button -->
-    <button @click="toggleMobileMenu" class="fade-in md:hidden p-2 cursor-pointer transition-colors hover:text-theme-light"
+    <button @click="toggleMobileMenu" class="navbar-fade-in md:hidden p-2 cursor-pointer transition-colors hover:text-theme-light"
       aria-label="Toggle Menu">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-6 text-text-dark-1" fill="none" viewBox="0 0 24 24"
         stroke="currentColor">
