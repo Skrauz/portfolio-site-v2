@@ -21,7 +21,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <nav class="common-container w-full flex md:items-end items-center justify-between md:py-12 py-6">
+  <nav class="common-container w-full flex md:items-end items-center justify-between md:py-10 py-6">
     <!-- Logo -->
     <NuxtLink class="navbar-fade-in md:mb-1" to="/">
       <NuxtImg class="w-[180px] lg:w-[200px]" src="/img/logo.png" />

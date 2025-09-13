@@ -16,22 +16,6 @@ const projects = [
     technologies: ["Nuxt", "TailwindCSS", "SCSS", "Typescript"],
     link: null,
   },
-  {
-    name: "Project 3",
-    description:
-      "Excepturi magnam sed eum est unde at facere iure. Nihil quisquam nisi ex consequuntur molestiae reprehenderit et. Omnis fugiat ex temporibus aperiam odio repellendus. Cupiditate cupiditate commodi consequatur.",
-    image: null,
-    technologies: ["Nuxt", "TailwindCSS", "SCSS", "Typescript"],
-    link: null,
-  },
-  {
-    name: "Lorem Ipsum Project 1",
-    description:
-      "Excepturi magnam sed eum est unde at facere iure. Nihil quisquam nisi ex consequuntur molestiae reprehenderit et. Omnis fugiat ex temporibus aperiam odio repellendus. Cupiditate cupiditate commodi consequatur.",
-    image: null,
-    technologies: ["Nuxt", "TailwindCSS", "SCSS", "Typescript"],
-    link: null,
-  },
 ];
 
 import { gsap } from "gsap";

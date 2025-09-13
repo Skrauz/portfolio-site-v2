@@ -28,7 +28,7 @@ import { gsap } from "gsap";
 </script>
 <template>
   <div
-    class="h-[calc(100dvh-96px)] md:h-[calc(100dvh-138px)] relative flex flex-col justify-center pb-8 md:pb-24"
+    class="h-[calc(100dvh-96px)] md:h-[calc(100dvh-120px)] relative flex flex-col justify-center pb-8 md:pb-24"
   >
     <div class="relative">
       <div class="common-container">
@@ -104,7 +104,7 @@ import { gsap } from "gsap";
     >
       <button
         @click="scrollToNextSection"
-        class="p-4 mb-2 md:mb-7 cursor-pointer transition-transform hover:scale-120"
+        class="p-4 mb-2 md:mb-6 cursor-pointer transition-transform hover:scale-120"
       >
         <nuxt-img class="w-5" src="/img/hero-arrow.svg"></nuxt-img>
       </button>
