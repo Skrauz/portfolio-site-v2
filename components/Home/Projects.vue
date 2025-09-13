@@ -4,17 +4,21 @@ const projects = [
     name: "Strona Portfolio v2",
     description:
       "Excepturi magnam sed eum est unde at facere iure. Nihil quisquam nisi ex consequuntur molestiae reprehenderit et. Omnis fugiat ex temporibus aperiam odio repellendus. Cupiditate cupiditate commodi consequatur. Ut sint occaecati corporis natus placeat non iusto et. Vel quae repudiandae suscipit beatae.",
-    image: "/img/projects/portfoliov2.jpg",
-    technologies: ["Nuxt", "TailwindCSS", "SCSS", "Typescript"],
+    image: "/img/projects/portfoliov2.png",
+    technologies: ["Nuxt", "TailwindCSS", "SCSS", "Typescript", "GSAP"],
     link: "https://skrauz.dev",
+    githubLink: "https://github.com/Skrauz/portfolio-site-v2",
+    frame: true,
   },
   {
-    name: "Project 2",
+    name: "Skrauzodoro Tracker",
     description:
       "Excepturi magnam sed eum est unde at facere iure. Nihil quisquam nisi ex consequuntur molestiae reprehenderit et. Omnis fugiat ex temporibus aperiam odio repellendus. Cupiditate cupiditate commodi consequatur.",
-    image: null,
-    technologies: ["Nuxt", "TailwindCSS", "SCSS", "Typescript"],
-    link: null,
+    image: "/img/projects/skrauzodoro.png",
+    technologies: ["Angular", "SCSS", "MongoDB", "Node", "ChartJS", "Typescript"],
+    link: "https://skrauzodoro-tracker-skrauz.vercel.app/",
+    githubLink: 'https://github.com/Skrauz/Skrauzodoro-Tracker-Browser.git',
+    frame: false,
   },
 ];
 
@@ -47,7 +51,7 @@ onMounted(() => {
     >
       <div class="w-full">
         <h2
-          class="scroll-fade-in text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-2px] text-center"
+          class="scroll-fade-in text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-1px] text-center"
         >
           Projekty
         </h2>
@@ -72,14 +76,15 @@ onMounted(() => {
               <nuxt-link
                 :to="project.link"
                 target="_blank"
-                class="project-header hover:text-theme-accent flex items-center gap-3 max-w-max transition-colors"
+                class="link-underline project-header flex items-center gap-3 max-w-max"
               >
+                <span class="underline"></span>
                 <h3
-                  class="project-name text-2xl md:text-3xl font-bold leading-[0.9] tracking-[-2px] text-center"
+                  class="project-name text-2xl md:text-3xl font-bold leading-[0.9] tracking-[-1px] text-center"
                 >
                   {{ project.name }}
                 </h3>
-                <div class="w-6">
+                <div class="w-5">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
                       fill="currentColor"
@@ -91,33 +96,44 @@ onMounted(() => {
             </template>
             <template v-else>
               <div
-                class="project-header hover:text-theme-accent flex items-center gap-3 max-w-max transition-colors"
+                class="project-header flex items-center gap-3 max-w-max"
               >
                 <h3
-                  class="project-name text-2xl md:text-3xl font-bold leading-[0.9] tracking-[-2px] text-center"
+                  class="project-name text-2xl md:text-3xl font-bold leading-[0.9] tracking-[-1px] text-center"
                 >
                   {{ project.name }}
                 </h3>
               </div>
             </template>
-            <div class="project-body flex xl:flex-row flex-col gap-4 mt-4">
+            <div class="project-body flex flex-col gap-4 mt-5">
+              <div
+                v-if="project.image"
+                class="w-full shrink-0"
+                :class="{
+                  'outline-theme-accent/50 outline-2 rounded-sm': project.frame,
+                }"
+              >
+                <nuxt-img class="w-full" :src="project.image"></nuxt-img>
+              </div>
+
               <p class="project-description leading-snug">
                 {{ project.description }}
               </p>
-              <div
-                v-if="project.image"
-                class="w-full xl:w-[40%] max-w-xs shrink-0"
-              >
-                <nuxt-img
-                  class="w-full rounded-sm"
-                  :src="project.image"
-                ></nuxt-img>
-              </div>
+
+              <nuxt-link
+                class="link-underline max-w-max mt-2 flex items-center gap-2 text-xl font-bold leading-[0.9] tracking-[-1px]"
+                v-if="project.githubLink"
+                :to="project.githubLink"
+                target="_blank"
+                ><p>Github</p>
+                <nuxt-img class="w-4" src="/img/socials/github.svg"></nuxt-img>
+                <span class="underline"></span>
+              </nuxt-link>
             </div>
             <div class="project-information mt-6">
               <div class="grid grid-cols-2 gap-4">
                 <div class="col-span-2">
-                  <h4 class="text-2xl font-bold leading-[0.9] tracking-[-2px]">
+                  <h4 class="text-2xl font-bold leading-[0.9] tracking-[-1px]">
                     Technologie
                   </h4>
                   <ul class="technologies flex flex-wrap gap-3 mt-4">
@@ -126,9 +142,11 @@ onMounted(() => {
                       :key="tech"
                       class="project-technology max-w-max cursor-default"
                     >
-                    <p class="rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6">
-                      {{ tech }}
-                    </p>
+                      <p
+                        class="rounded-full font-bold text-theme-accent bg-theme-accent/25 px-3 py-1 transition-transform hover:scale-110 hover:-rotate-6"
+                      >
+                        {{ tech }}
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -140,4 +158,26 @@ onMounted(() => {
     </div>
   </div>
 </template>
-<style scoped></style>
+<style scoped style="scss">
+.link-underline {
+  position: relative;
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background: var(--color-theme-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.link-underline:hover .underline {
+  transform: scaleX(1);
+}
+</style>

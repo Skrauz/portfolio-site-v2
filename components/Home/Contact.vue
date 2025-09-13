@@ -13,7 +13,7 @@ const publicConfig = useRuntimeConfig().public;
         </div>
         <div class="flex flex-col items-center justify-evenly h-full">
           <div class="header-panel flex flex-col items-center">
-            <h1 class="scroll-fade-in text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-2px] text-center"> Kontakt </h1>
+            <h1 class="scroll-fade-in text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-1px] text-center"> Kontakt </h1>
             <div class="scroll-fade-in text-xl mt-3 text-center font-medium">
               <p class="">Masz pomysł na <span class="text-theme-accent">interesujący projekt?</span></p>
               <p class=""><span class="text-theme-accent">Skontaktuj się</span> ze mną!</p>

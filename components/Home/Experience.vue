@@ -79,7 +79,7 @@ onMounted(() => {
       </div>
       <div class="experience">
         <h2
-          class="scroll-fade-in text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-2px] md:text-center"
+          class="scroll-fade-in text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-1px] md:text-center"
         >
           Doświadczenie
         </h2>
@@ -90,7 +90,7 @@ onMounted(() => {
             class="position-panel max-w-xl"
           >
             <h3
-              class="text-2xl font-bold leading-[0.9] tracking-[-2px] md:text-center"
+              class="text-2xl font-bold leading-[0.9] tracking-[-1px] md:text-center"
             >
               <span class="text-theme-accent">{{ position.role }}</span> w
               {{ position.company }}

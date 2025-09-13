@@ -5,7 +5,7 @@
   <div class="common-container">
     <div class="pt-8 mt-16 md:pt-20 md:mt-4 min-h-[400px] w-full justify-between mx-auto pb-32">
       <article class="privacy-policy">
-        <h2 class="text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-2px]"> Polityka Prywatności </h2>
+        <h2 class="text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-1px]"> Polityka Prywatności </h2>
         <div class="mt-12 prose prose-invert max-w-none">
           <p><strong>Ostatnia aktualizacja:</strong> 2025-09-10</p>
           <p>Niniejsza strona internetowa nie gromadzi ani nie przetwarza żadnych

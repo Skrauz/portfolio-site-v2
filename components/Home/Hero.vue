@@ -6,25 +6,6 @@ function scrollToNextSection() {
   }
 }
 const publicConfig = useRuntimeConfig().public;
-
-import { gsap } from "gsap";
-
-// onMounted(() => {
-//   const elements = document.querySelectorAll('.fade-in')
-
-//   elements.forEach(el => {
-//     gsap.from(el, {
-//       opacity: 0,
-//       y: 50,
-//       duration: 1,
-//       scrollTrigger: {
-//         trigger: el,
-//         start: 'top 80%',
-//         toggleActions: 'play none none reverse'
-//       }
-//     })
-//   })
-// })
 </script>
 <template>
   <div
@@ -34,7 +15,7 @@ import { gsap } from "gsap";
       <div class="common-container">
         <div class="hero flex flex-col items-center">
           <h1
-            class="text-6xl font-bold text-center leading-[0.9] tracking-[-2px] fade-in"
+            class="text-6xl font-bold text-center leading-[0.9] tracking-[-1px] fade-in"
           >
             <span class="text-theme-accent">&nbsp;S</span>ebastian<span
               class="text-theme-accent"
