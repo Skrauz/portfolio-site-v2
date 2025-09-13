@@ -32,7 +32,24 @@ onMounted(() => {
       ...fadeInAnimation,
       scrollTrigger: {
         trigger: el,
-        start: "top 80%",
+        start: "top 90%",
+      },
+    });
+  });
+
+  const stickScrollFadeInElements = gsap.utils
+    .toArray(".stick-scroll-fade-in")
+    .filter((el: any) => {
+      return el.offsetParent !== null;
+    });
+
+  stickScrollFadeInElements.forEach((el: any) => {
+    gsap.from(el, {
+      ...fadeInAnimation,
+      y: 10,
+      scrollTrigger: {
+        trigger: el,
+        start: "top 100%",
       },
     });
   });

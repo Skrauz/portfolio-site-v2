@@ -5,21 +5,21 @@ const publicConfig = useRuntimeConfig().public;
   <div class="mt-20 md:mt-24">
     <div class="h-[100dvh] common-container" id="kontakt">
       <div class="flex flex-col justify-between py-10 h-full items-center">
-        <div class="relative shrink-0 md:block hidden">
+        <div class="stick-scroll-fade-in relative shrink-0 md:block hidden">
           <nuxt-img class="h-6" src="/img/contact_stick.svg"></nuxt-img>
         </div>
-        <div class="relative shrink-0 hidden sm:block md:hidden">
+        <div class="stick-scroll-fade-in relative shrink-0 hidden sm:block md:hidden">
           <nuxt-img class="h-6" src="/img/small_contact_stick.svg"></nuxt-img>
         </div>
         <div class="flex flex-col items-center justify-evenly h-full">
           <div class="header-panel flex flex-col items-center">
-            <h1 class="text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-2px] text-center"> Kontakt </h1>
-            <div class="text-xl mt-3 text-center font-medium">
+            <h1 class="scroll-fade-in text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-2px] text-center"> Kontakt </h1>
+            <div class="scroll-fade-in text-xl mt-3 text-center font-medium">
               <p class="">Masz pomysł na <span class="text-theme-accent">interesujący projekt?</span></p>
               <p class=""><span class="text-theme-accent">Skontaktuj się</span> ze mną!</p>
             </div>
           </div>
-          <div class="email-panel flex flex-col items-center">
+          <div class="scroll-fade-in email-panel flex flex-col items-center">
             <nuxt-link class="text-2xl font-bold relative email-link-underline" :to="`mailto:${publicConfig.contactEmail}`">
               <span class="relative z-10">{{ publicConfig.contactEmail }}</span>
               <span class="email-underline"></span>
@@ -27,7 +27,7 @@ const publicConfig = useRuntimeConfig().public;
             </nuxt-link>
             <p class="mt-1 text-lg italic text-theme-light uppercase text-center">E-mail</p>
           </div>
-          <div class="socials-panel flex flex-col items-center">
+          <div class="scroll-fade-in socials-panel flex flex-col items-center">
             <div class="social-links flex items-center gap-3">
               <nuxt-link class="cursor-pointer md:opacity-75 transition-all hover:opacity-100"
                 to="https://www.linkedin.com/in/skrauz/" target="_blank">
@@ -45,10 +45,10 @@ const publicConfig = useRuntimeConfig().public;
             <p class="mt-1 text-lg italic text-theme-light uppercase text-center">Social Media</p>
           </div>
         </div>
-        <div class="relative shrink-0 md:block hidden">
+        <div class="stick-scroll-fade-in relative shrink-0 md:block hidden">
           <nuxt-img class="h-6" src="/img/contact_stick.svg"></nuxt-img>
         </div>
-        <div class="relative shrink-0 hidden sm:block md:hidden">
+        <div class="stick-scroll-fade-in relative shrink-0 hidden sm:block md:hidden">
           <nuxt-img class="h-6" src="/img/small_contact_stick.svg"></nuxt-img>
         </div>
       </div>
