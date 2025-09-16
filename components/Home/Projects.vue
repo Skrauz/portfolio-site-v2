@@ -31,6 +31,8 @@ const projects = [
 
 import { gsap } from "gsap";
 
+import { fadeInAnimation } from "~/composables/fadeInAnim";
+
 onMounted(() => {
     gsap.utils.toArray(".project-panel").forEach((projectPanel: any) => {
         const projectTechnologies = projectPanel.querySelectorAll(
