@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   css: ["~/assets/css/main.css"],
   vite: { plugins: [tailwindcss()] },
-  modules: ["@nuxt/image"],
+  modules: ["@nuxt/image", "@nuxtjs/seo"],
 
   runtimeConfig: {
     public: {
@@ -14,5 +14,9 @@ export default defineNuxtConfig({
     },
   },
 
-  
+  site: {
+      url: 'https://skrauz.dev',
+      name: 'Sebastian Krauzowicz - Web Developer',
+    },
+
 });
