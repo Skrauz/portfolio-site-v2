@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   site: {
     url: "https://skrauz.dev",
     name: "Sebastian Krauzowicz - Web Developer",
-    description: "Strona internetowa i portfolio Sebastiana Krauzowicza",
+    description: "Strona portfolio",
     keywords: ["web developer", "frontend developer", "portfolio", "poland"],
     author: "Sebastian Krauzowicz",
     publisher: "Sebastian Krauzowicz",
@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     og: {
       type: "website",
       title: "Sebastian Krauzowicz - Web Developer",
-      description: "Strona internetowa i portfolio Sebastiana Krauzowicza",
+      description: "Strona portfolio",
       url: "https://skrauz.dev",
       image: "/img/og-image.png",
     },
