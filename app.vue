@@ -1,5 +1,7 @@
 <script setup lang="ts">
-
+useSeoMeta({
+  ogImage: "/ogimage.png",
+})
 </script>
 
 <template>
