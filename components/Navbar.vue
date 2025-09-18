@@ -55,12 +55,12 @@ onMounted(() => {
     enter-to-class="opacity-100" leave-from-class="opacity-100"
     leave-active-class="transition-all duration-150 ease-out" leave-to-class="opacity-0">
     <div v-if="isMobileMenuOpen" @click="toggleMobileMenu"
-      class="mobile-menu-backdrop fixed top-0 left-0 w-full h-screen bg-black/50 z-[45]"></div>
+      class="mobile-menu-backdrop fixed top-0 left-0 w-full h-[100dvh] bg-black/50 z-[45]"></div>
   </Transition>
   <Transition name="fade" enter-active-class="duration-150 ease-out" enter-from-class="opacity-0 -translate-x-36"
     enter-to-class="opacity-100 translate-x-0" leave-active-class="transition-all duration-150 ease-in"
     leave-from-class="opacity-100 translate-x-0" leave-to-class="opacity-0 -translate-x-36">
-    <nav v-if="isMobileMenuOpen" class="mobile-menu fixed top-0 left-0 w-[75%] h-screen bg-theme-dark-2 z-50">
+    <nav v-if="isMobileMenuOpen" class="mobile-menu fixed top-0 left-0 w-[75%] h-[100dvh] bg-theme-dark-2 z-50">
       <div class="ml-2">
         <div class="common-container flex items-center justify-between md:py-12 py-6">
           <h3 class="text-3xl font-bold tracking-tighter relative group"> Menu </h3>
