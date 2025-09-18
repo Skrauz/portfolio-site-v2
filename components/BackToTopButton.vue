@@ -3,7 +3,7 @@
     <button v-if="buttonVisible" @click="scrollToTop"
       class="cursor-pointer fixed bottom-10 right-6 md:bottom-6 md:right-8 z-10 size-12 flex justify-center p-2 rounded-full bg-theme-accent text-theme-dark shadow-lg transition-colors hover:bg-theme-accent-hover"
       aria-label="Back to top">
-       <nuxt-img class="w-4" src="/img/arrow_up.svg"></nuxt-img>
+       <img class="w-4" src="/img/arrow_up.svg"></img>
     </button>
   </transition>
 </template>
