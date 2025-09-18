@@ -44,7 +44,7 @@ import { gsap } from "gsap";
 onMounted(() => {
   gsap.utils.toArray(".position-panel").forEach((experiencePanel: any) => {
     const positionTechnologies = experiencePanel.querySelectorAll(
-      ".position-technology"
+      ".position-technology",
     );
 
     const pillsTimeline = gsap.timeline({
@@ -55,7 +55,7 @@ onMounted(() => {
       },
     });
 
-    pillsTimeline.from(experiencePanel, {...fadeInAnimation, delay: 0.1});
+    pillsTimeline.from(experiencePanel, { ...fadeInAnimation, delay: 0.1 });
 
     pillsTimeline.from(positionTechnologies, fadeInAnimation);
   });
@@ -92,8 +92,8 @@ onMounted(() => {
             <h3
               class="text-2xl font-bold leading-[0.9] tracking-[-1px] md:text-center"
             >
-              <span class="text-theme-accent">{{ position.role }}</span> w
-              {{ position.company }}
+              <span class="text-theme-accent">{{ position.role }}</span>
+              w&nbsp;{{ position.company }}
             </h3>
             <p
               class="mt-1 text-lg italic text-theme-light uppercase md:text-center"

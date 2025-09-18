@@ -26,7 +26,7 @@ const publicConfig = useRuntimeConfig().public;
           <p
             class="fade-in uppercase mt-6 md:mt-3 text-2xl italic text-center text-theme-light"
           >
-            Front-End & Web Developer
+            Front-End &&nbsp;Web Developer
           </p>
           <nuxt-link
             to="#kontakt"

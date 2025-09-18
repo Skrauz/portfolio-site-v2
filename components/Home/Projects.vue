@@ -13,7 +13,7 @@ const projects = [
     {
         name: "Skrauzodoro Tracker",
         description:
-            "Skrauzodoro Tracker to konfigurowalne narzędzie do śledzenia i zarządzania zasem pracy, zbudowane w oparciu o stack MEAN (MongoDB, ExpressJS, Angular, NodeJS). Aplikacja powstała z mojej potrzeby posiadania prostego rozwiązania do śledzenia pracy, umożliwiającego dalszą analizę zebranych danych. Aplikacja umożliwia śledzenie czasu poświęconego na konkretne zadania i projekty przy użyciu klasycznego stopera lub techniki pomodoro.",
+            "Skrauzodoro Tracker to konfigurowalne narzędzie do śledzenia i zarządzania czasem pracy, zbudowane w oparciu o stack MEAN (MongoDB, ExpressJS, Angular, NodeJS). Aplikacja powstała z mojej potrzeby posiadania prostego rozwiązania do śledzenia pracy, umożliwiającego dalszą analizę zebranych danych. Aplikacja umożliwia śledzenie czasu poświęconego na konkretne zadania i projekty przy użyciu klasycznego stopera lub techniki pomodoro.",
         image: "/img/projects/skrauzodoro.png",
         technologies: [
             "Angular",
@@ -32,6 +32,19 @@ const projects = [
 import { gsap } from "gsap";
 
 import { fadeInAnimation } from "~/composables/fadeInAnim";
+
+const processDescription = (text: string) => {
+    const prepositions = ['w', 'z', 'na', 'do', 'od', 'za', 'po', 'dla', 'przez', 'bez', 'pod', 'nad', 'przy', 'między', 'przed', 'o', 'ze', 'ze', 'a', 'i', 'lub', 'oraz'];
+
+    let processedText = text;
+
+    prepositions.forEach(prep => {
+        const regex = new RegExp(`\\s(${prep})\\s`, 'gi');
+        processedText = processedText.replace(regex, ` $1&nbsp;`);
+    });
+
+    return processedText;
+};
 
 onMounted(() => {
     gsap.utils.toArray(".project-panel").forEach((projectPanel: any) => {
@@ -132,8 +145,7 @@ onMounted(() => {
                                 ></nuxt-img>
                             </div>
 
-                            <p class="project-description leading-snug">
-                                {{ project.description }}
+                            <p class="project-description leading-snug" v-html="processDescription(project.description)">
                             </p>
 
                             <nuxt-link
