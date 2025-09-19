@@ -1,52 +1,15 @@
 <template>
-  <div class="fixed size-full top-0 left-0 -z-10 bg-theme-dark-2">
-    <canvas class="opacity-80" id="canvas"></canvas>
+  <div class="fixed w-[100vw] h-[100vh] top-0 left-0 -z-10">
+    <canvas class="size-full opacity-80" id="canvas"></canvas>
   </div>
 </template>
 
 <style scoped lang="scss">
-#canvas {
-  width: 100%;
-  height: 100%;
-  background: #10151e;
-}
 
-body {
-  width: 100%;
-  height: 100dvh;
-  background-color: #000;
-  background-image: radial-gradient(
-      circle at top right,
-      rgba(121, 68, 154, 0.13),
-      transparent
-    ),
-    radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
-}
-canvas {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-}
-
-a {
-  position: absolute;
-  bottom: 2vmin;
-  right: 2vmin;
-  color: rgba(255, 255, 255, 0.2);
-  text-decoration: none;
-}
-
-a:hover {
-  color: #fff;
-}
 </style>
 
 <script setup>
 onMounted(() => {
-  /*          *     .        *  .    *    *   .
- .  *  move your mouse to over the stars   .
- *  .  .   change these values:   .  *
-   .      * .        .          * .       */
   const STAR_COLOR = "#fff";
   const STAR_SIZE = 3;
   const STAR_MIN_SCALE = 0.2;
@@ -72,7 +35,7 @@ onMounted(() => {
   resize();
   step();
 
-  window.onresize = resize;
+  // window.onresize = resize;
   window.onmousemove = onMouseMove;
   window.ontouchmove = onTouchMove;
   window.ontouchend = onMouseLeave;
