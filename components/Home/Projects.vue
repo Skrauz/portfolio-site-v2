@@ -93,12 +93,14 @@ onMounted(() => {
                         <nuxt-img
                             src="/img/frame_small.svg"
                             class="-z-10 absolute top-0 left-0 md:w-[230px] w-[250px]"
+                            alt="Decorative frame border"
                         ></nuxt-img>
                         <template v-if="project.link">
                             <nuxt-link
                                 :to="project.link"
                                 target="_blank"
                                 class="link-underline project-header flex items-center gap-3 max-w-max"
+                                :aria-label="`Visit ${project.name} project`"
                             >
                                 <span class="underline"></span>
                                 <h3
@@ -142,6 +144,7 @@ onMounted(() => {
                                 <nuxt-img
                                     class="w-full"
                                     :src="project.image"
+                                    :alt="`Screenshot of ${project.name} project`"
                                 ></nuxt-img>
                             </div>
 
@@ -153,10 +156,12 @@ onMounted(() => {
                                 v-if="project.githubLink"
                                 :to="project.githubLink"
                                 target="_blank"
+                                :aria-label="`View ${project.name} on GitHub`"
                                 ><p>Github</p>
                                 <nuxt-img
                                     class="w-4"
                                     src="/img/socials/github.svg"
+                                    alt="GitHub logo"
                                 ></nuxt-img>
                                 <span class="underline"></span>
                             </nuxt-link>

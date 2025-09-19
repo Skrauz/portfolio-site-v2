@@ -4,7 +4,7 @@
       <div class="common-container">
         <div class="flex justify-center py-3 gap-4 flex-wrap-reverse gap-y-2">
           <p class="text-sm text-theme-accent shrink-0">© {{ year }} Sebastian Krauzowicz</p>
-          <nuxt-link to="/polityka-prywatnosci">
+          <nuxt-link to="/polityka-prywatnosci" aria-label="Read privacy policy">
             <p class="text-sm text-theme-accent underline shrink-0">Polityka Prywatności</p>
           </nuxt-link>
         </div>

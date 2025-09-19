@@ -31,6 +31,7 @@ const publicConfig = useRuntimeConfig().public;
           <nuxt-link
             to="#kontakt"
             class="fade-in mt-6 md:mt-4 transition-colors hover:bg-theme-accent-hover rounded-full py-1.5 px-6 flex items-center gap-2.5 bg-theme-accent text-theme-dark max-w-max"
+            aria-label="Go to contact section"
           >
             <p class="font-bold text-2xl leading-[1.2] tracking-tight">
               Kontakt
@@ -45,8 +46,9 @@ const publicConfig = useRuntimeConfig().public;
               class="fade-in block cursor-pointer"
               to="https://www.linkedin.com/in/skrauz/"
               target="_blank"
+              aria-label="Visit LinkedIn profile"
             >
-              <nuxt-img class="w-8" src="/img/socials/linkedin.svg"></nuxt-img>
+              <nuxt-img class="w-8" src="/img/socials/linkedin.svg" alt="LinkedIn logo"></nuxt-img>
             </nuxt-link>
           </div>
           <div class="opacity-75 transition-opacity hover:opacity-100">
@@ -54,8 +56,9 @@ const publicConfig = useRuntimeConfig().public;
               class="fade-in block cursor-pointer"
               to="https://github.com/Skrauz"
               target="_blank"
+              aria-label="Visit GitHub profile"
             >
-              <nuxt-img class="w-8" src="/img/socials/github.svg"></nuxt-img>
+              <nuxt-img class="w-8" src="/img/socials/github.svg" alt="GitHub logo"></nuxt-img>
             </nuxt-link>
           </div>
           <div class="opacity-75 transition-opacity hover:opacity-100">
@@ -63,8 +66,9 @@ const publicConfig = useRuntimeConfig().public;
               class="fade-in block cursor-pointer"
               to="https://www.instagram.com/skrauz_dev/"
               target="_blank"
+              aria-label="Visit Instagram profile"
             >
-              <nuxt-img class="w-8" src="/img/socials/instagram.svg"></nuxt-img>
+              <nuxt-img class="w-8" src="/img/socials/instagram.svg" alt="Instagram logo"></nuxt-img>
             </nuxt-link>
           </div>
           <div class="opacity-75 transition-opacity hover:opacity-100">
@@ -72,8 +76,9 @@ const publicConfig = useRuntimeConfig().public;
               class="fade-in block cursor-pointer"
               :to="`mailto:${publicConfig.contactEmail}`"
               target="_blank"
+              aria-label="Send email to Sebastian Krauzowicz"
             >
-              <nuxt-img class="w-8" src="/img/socials/mail.svg"></nuxt-img>
+              <nuxt-img class="w-8" src="/img/socials/mail.svg" alt="Email icon"></nuxt-img>
             </nuxt-link>
           </div>
         </div>
@@ -86,8 +91,9 @@ const publicConfig = useRuntimeConfig().public;
       <button
         @click="scrollToNextSection"
         class="p-4 mb-2 md:mb-6 cursor-pointer transition-transform hover:scale-120"
+        aria-label="Scroll to next section"
       >
-        <nuxt-img class="w-5" src="/img/hero-arrow.svg"></nuxt-img>
+        <nuxt-img class="w-5" src="/img/hero-arrow.svg" alt="Down arrow"></nuxt-img>
       </button>
     </div>
   </div>

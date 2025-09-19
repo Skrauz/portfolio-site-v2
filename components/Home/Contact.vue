@@ -6,10 +6,10 @@ const publicConfig = useRuntimeConfig().public;
     <div class="h-[100dvh] common-container" id="kontakt">
       <div class="flex flex-col justify-between py-10 h-full items-center">
         <div class="stick-scroll-fade-in relative shrink-0 md:block hidden">
-          <nuxt-img class="h-6" src="/img/contact_stick.svg"></nuxt-img>
+          <nuxt-img class="h-6" src="/img/contact_stick.svg" alt="Decorative stick graphic"></nuxt-img>
         </div>
         <div class="stick-scroll-fade-in relative shrink-0 hidden sm:block md:hidden">
-          <nuxt-img class="h-6" src="/img/small_contact_stick.svg"></nuxt-img>
+          <nuxt-img class="h-6" src="/img/small_contact_stick.svg" alt="Decorative stick graphic"></nuxt-img>
         </div>
         <div class="flex flex-col items-center justify-evenly h-full">
           <div class="header-panel flex flex-col items-center">
@@ -20,7 +20,7 @@ const publicConfig = useRuntimeConfig().public;
             </div>
           </div>
           <div class="scroll-fade-in email-panel flex flex-col items-center">
-            <nuxt-link class="text-2xl font-bold relative email-link-underline" :to="`mailto:${publicConfig.contactEmail}`">
+            <nuxt-link class="text-2xl font-bold relative email-link-underline" :to="`mailto:${publicConfig.contactEmail}`" aria-label="Send email to Sebastian Krauzowicz">
               <span class="relative z-10">{{ publicConfig.contactEmail }}</span>
               <span class="email-underline"></span>
               <span class="email-mobile-underline md:hidden"></span>
@@ -30,26 +30,26 @@ const publicConfig = useRuntimeConfig().public;
           <div class="scroll-fade-in socials-panel flex flex-col items-center">
             <div class="social-links flex items-center gap-3">
               <nuxt-link class="cursor-pointer md:opacity-75 transition-all hover:opacity-100"
-                to="https://www.linkedin.com/in/skrauz/" target="_blank">
-                <nuxt-img class="w-8" src="/img/socials/linkedin.svg"></nuxt-img>
+                to="https://www.linkedin.com/in/skrauz/" target="_blank" aria-label="Visit LinkedIn profile">
+                <nuxt-img class="w-8" src="/img/socials/linkedin.svg" alt="LinkedIn logo"></nuxt-img>
               </nuxt-link>
               <nuxt-link class="cursor-pointer md:opacity-75 transition-all hover:opacity-100"
-                to="https://github.com/Skrauz" target="_blank">
-                <nuxt-img class="w-8" src="/img/socials/github.svg"></nuxt-img>
+                to="https://github.com/Skrauz" target="_blank" aria-label="Visit GitHub profile">
+                <nuxt-img class="w-8" src="/img/socials/github.svg" alt="GitHub logo"></nuxt-img>
               </nuxt-link>
               <nuxt-link class="cursor-pointer md:opacity-75 transition-all hover:opacity-100"
-                to="https://www.instagram.com/skrauz_dev/" target="_blank">
-                <nuxt-img class="w-8" src="/img/socials/instagram.svg"></nuxt-img>
+                to="https://www.instagram.com/skrauz_dev/" target="_blank" aria-label="Visit Instagram profile">
+                <nuxt-img class="w-8" src="/img/socials/instagram.svg" alt="Instagram logo"></nuxt-img>
               </nuxt-link>
             </div>
             <p class="mt-1 text-lg italic text-theme-light uppercase text-center">Social Media</p>
           </div>
         </div>
         <div class="stick-scroll-fade-in relative shrink-0 md:block hidden">
-          <nuxt-img class="h-6" src="/img/contact_stick.svg"></nuxt-img>
+          <nuxt-img class="h-6" src="/img/contact_stick.svg" alt="Decorative stick graphic"></nuxt-img>
         </div>
         <div class="stick-scroll-fade-in relative shrink-0 hidden sm:block md:hidden">
-          <nuxt-img class="h-6" src="/img/small_contact_stick.svg"></nuxt-img>
+          <nuxt-img class="h-6" src="/img/small_contact_stick.svg" alt="Decorative stick graphic"></nuxt-img>
         </div>
       </div>
     </div>

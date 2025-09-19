@@ -23,8 +23,8 @@ onMounted(() => {
 <template>
   <nav class="common-container w-full flex md:items-end items-center justify-between md:py-10 py-6">
     <!-- Logo -->
-    <NuxtLink class="navbar-fade-in md:mb-1" to="/">
-      <NuxtImg class="w-[180px] lg:w-[200px]" src="/img/logo.png" />
+    <NuxtLink class="navbar-fade-in md:mb-1" to="/" aria-label="Go to homepage">
+      <NuxtImg class="w-[180px] lg:w-[200px]" src="/img/logo.png" alt="Skrauz.dev logo" />
     </NuxtLink>
     <!-- Desktop Nav -->
     <div class="items-center gap-8 hidden md:flex">
@@ -90,17 +90,17 @@ onMounted(() => {
         </div>
         <div class="py-6 common-container absolute bottom-0 left-0">
           <div class="flex items-center gap-4">
-            <nuxt-link class="cursor-pointer" to="https://www.linkedin.com/in/skrauz/" target="_blank">
-              <nuxt-img class="w-6" src="/img/socials/linkedin.svg"></nuxt-img>
+            <nuxt-link class="cursor-pointer" to="https://www.linkedin.com/in/skrauz/" target="_blank" aria-label="Visit LinkedIn profile">
+              <nuxt-img class="w-6" src="/img/socials/linkedin.svg" alt="LinkedIn logo"></nuxt-img>
             </nuxt-link>
-            <nuxt-link class="cursor-pointer" to="https://github.com/Skrauz" target="_blank">
-              <nuxt-img class="w-6" src="/img/socials/github.svg"></nuxt-img>
+            <nuxt-link class="cursor-pointer" to="https://github.com/Skrauz" target="_blank" aria-label="Visit GitHub profile">
+              <nuxt-img class="w-6" src="/img/socials/github.svg" alt="GitHub logo"></nuxt-img>
             </nuxt-link>
-            <nuxt-link class="cursor-pointer" to="https://www.instagram.com/skrauz_dev/" target="_blank">
-              <nuxt-img class="w-6" src="/img/socials/instagram.svg"></nuxt-img>
+            <nuxt-link class="cursor-pointer" to="https://www.instagram.com/skrauz_dev/" target="_blank" aria-label="Visit Instagram profile">
+              <nuxt-img class="w-6" src="/img/socials/instagram.svg" alt="Instagram logo"></nuxt-img>
             </nuxt-link>
-            <nuxt-link class="cursor-pointer pt-1.5" :to="`mailto:${publicConfig.contactEmail}`" target="_blank">
-              <nuxt-img class="w-6" src="/img/socials/mail.svg"></nuxt-img>
+            <nuxt-link class="cursor-pointer pt-1.5" :to="`mailto:${publicConfig.contactEmail}`" target="_blank" aria-label="Send email to Sebastian Krauzowicz">
+              <nuxt-img class="w-6" src="/img/socials/mail.svg" alt="Email icon"></nuxt-img>
             </nuxt-link>
           </div>
         </div>
