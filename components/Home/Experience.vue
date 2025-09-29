@@ -65,7 +65,7 @@ onMounted(() => {
 <template>
   <div class="common-container" id="doswiadczenie">
     <div
-      class="pt-8 mt-16 md:pt-20 md:mt-4 flex gap-4 md:gap-12 min-h-[400px] w-full justify-between mx-auto"
+      class="pt-8 mt-16 md:pt-20 md:mt-16 flex gap-4 md:gap-12 min-h-[400px] w-full justify-between mx-auto"
     >
       <div
         class="scroll-fade-in mt-1.5 md:mt-5 animated-bar relative shrink-0 hidden md:block"

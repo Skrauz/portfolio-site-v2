@@ -53,8 +53,8 @@ onMounted(() => {
 
 <template>
     <HomeHero></HomeHero>
-    <HomeExperience></HomeExperience>
     <HomeProjects></HomeProjects>
+    <HomeExperience></HomeExperience>
     <HomeContact></HomeContact>
 </template>
 

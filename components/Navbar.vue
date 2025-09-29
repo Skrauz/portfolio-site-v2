@@ -28,13 +28,13 @@ onMounted(() => {
     </NuxtLink>
     <!-- Desktop Nav -->
     <div class="items-center gap-8 hidden md:flex">
-      <NuxtLink to="/#doswiadczenie"
-        class="navbar-fade-in text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
-        <span class="text-theme-accent">/</span>Doświadczenie <span class="nav-underline"></span>
-      </NuxtLink>
       <NuxtLink to="/#projekty"
         class="navbar-fade-in text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
         <span class="text-theme-accent">/</span>Projekty <span class="nav-underline"></span>
+      </NuxtLink>
+      <NuxtLink to="/#doswiadczenie"
+        class="navbar-fade-in text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
+        <span class="text-theme-accent">/</span>Doświadczenie <span class="nav-underline"></span>
       </NuxtLink>
       <NuxtLink to="/#kontakt"
         class="navbar-fade-in text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
@@ -74,13 +74,13 @@ onMounted(() => {
         </div>
         <div class="common-container">
           <div class="flex flex-col gap-4">
-            <NuxtLink @click="toggleMobileMenu" to="/#doswiadczenie"
-              class="text-xl font-bold tracking-tighter relative group transition-colors hover:text-theme-light">
-              <span class="text-theme-accent">/</span>Doświadczenie
-            </NuxtLink>
             <NuxtLink @click="toggleMobileMenu" to="/#projekty"
               class="text-xl font-bold tracking-tighter relative group transition-colors hover:text-theme-light">
               <span class="text-theme-accent">/</span>Projekty
+            </NuxtLink>
+            <NuxtLink @click="toggleMobileMenu" to="/#doswiadczenie"
+              class="text-xl font-bold tracking-tighter relative group transition-colors hover:text-theme-light">
+              <span class="text-theme-accent">/</span>Doświadczenie
             </NuxtLink>
             <NuxtLink @click="toggleMobileMenu" to="/#kontakt"
               class="text-xl font-bold tracking-tighter relative group transition-colors hover:text-theme-light">

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 function scrollToNextSection() {
-  const nextSection = document.getElementById("doswiadczenie");
+  const nextSection = document.getElementById("projekty");
   if (nextSection) {
     nextSection.scrollIntoView({ behavior: "smooth" });
   }
@@ -24,13 +24,13 @@ const publicConfig = useRuntimeConfig().public;
             >owicz
           </h1>
           <p
-            class="fade-in uppercase mt-6 md:mt-3 text-2xl italic text-center text-theme-light"
+            class="fade-in uppercase mt-5 md:mt-4 text-2xl leading-normal mx-auto max-w-[250px] sm:max-w-none italic text-center text-theme-light"
           >
-            Front-End &&nbsp;Web Developer
+            Twoja strona. Twój biznes.
           </p>
           <nuxt-link
             to="#kontakt"
-            class="fade-in mt-6 md:mt-4 transition-colors hover:bg-theme-accent-hover rounded-full py-1.5 px-6 flex items-center gap-2.5 bg-theme-accent text-theme-dark max-w-max"
+            class="fade-in mt-5 md:mt-5 transition-colors hover:bg-theme-accent-hover rounded-full py-1.5 px-6 flex items-center gap-2.5 bg-theme-accent text-theme-dark max-w-max"
             aria-label="Go to contact section"
           >
             <p class="font-bold text-2xl leading-[1.2] tracking-tight">
@@ -48,7 +48,11 @@ const publicConfig = useRuntimeConfig().public;
               target="_blank"
               aria-label="Visit LinkedIn profile"
             >
-              <nuxt-img class="w-8" src="/img/socials/linkedin.svg" alt="LinkedIn logo"></nuxt-img>
+              <nuxt-img
+                class="w-8"
+                src="/img/socials/linkedin.svg"
+                alt="LinkedIn logo"
+              ></nuxt-img>
             </nuxt-link>
           </div>
           <div class="opacity-75 transition-opacity hover:opacity-100">
@@ -58,7 +62,11 @@ const publicConfig = useRuntimeConfig().public;
               target="_blank"
               aria-label="Visit GitHub profile"
             >
-              <nuxt-img class="w-8" src="/img/socials/github.svg" alt="GitHub logo"></nuxt-img>
+              <nuxt-img
+                class="w-8"
+                src="/img/socials/github.svg"
+                alt="GitHub logo"
+              ></nuxt-img>
             </nuxt-link>
           </div>
           <div class="opacity-75 transition-opacity hover:opacity-100">
@@ -68,7 +76,11 @@ const publicConfig = useRuntimeConfig().public;
               target="_blank"
               aria-label="Visit Instagram profile"
             >
-              <nuxt-img class="w-8" src="/img/socials/instagram.svg" alt="Instagram logo"></nuxt-img>
+              <nuxt-img
+                class="w-8"
+                src="/img/socials/instagram.svg"
+                alt="Instagram logo"
+              ></nuxt-img>
             </nuxt-link>
           </div>
           <div class="opacity-75 transition-opacity hover:opacity-100">
@@ -78,7 +90,11 @@ const publicConfig = useRuntimeConfig().public;
               target="_blank"
               aria-label="Send email to Sebastian Krauzowicz"
             >
-              <nuxt-img class="w-8" src="/img/socials/mail.svg" alt="Email icon"></nuxt-img>
+              <nuxt-img
+                class="w-8"
+                src="/img/socials/mail.svg"
+                alt="Email icon"
+              ></nuxt-img>
             </nuxt-link>
           </div>
         </div>
@@ -93,7 +109,11 @@ const publicConfig = useRuntimeConfig().public;
         class="p-4 mb-2 md:mb-6 cursor-pointer transition-transform hover:scale-120"
         aria-label="Scroll to next section"
       >
-        <nuxt-img class="w-5" src="/img/hero-arrow.svg" alt="Down arrow"></nuxt-img>
+        <nuxt-img
+          class="w-5"
+          src="/img/hero-arrow.svg"
+          alt="Down arrow"
+        ></nuxt-img>
       </button>
     </div>
   </div>

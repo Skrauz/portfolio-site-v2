@@ -69,7 +69,7 @@ onMounted(() => {
 <template>
     <div class="common-container" id="projekty">
         <div
-            class="pt-12 mt-16 md:pt-20 md:mt-12 xl:mt-20 flex gap-4 md:gap-12 min-h-[400px] w-full justify-between mx-auto"
+            class="pt-12 mt-8 md:pt-20 md:mt-12 xl:mt-20 flex gap-4 md:gap-12 min-h-[400px] w-full justify-between mx-auto"
         >
             <div class="w-full">
                 <h2
@@ -78,7 +78,7 @@ onMounted(() => {
                     Projekty
                 </h2>
                 <div
-                    class="projects gap-6 mt-6 md:mt-12 xl:mt-20 grid grid-cols-1 lg:grid-cols-2"
+                    class="projects gap-6 mt-12 md:mt-12 xl:mt-20 grid grid-cols-1 lg:grid-cols-2"
                 >
                     <div
                         class="project-panel md:p-8 p-7 relative group h-max"
