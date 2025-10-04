@@ -24,9 +24,10 @@ const publicConfig = useRuntimeConfig().public;
             >owicz
           </h1>
           <p
-            class="fade-in uppercase mt-5 md:mt-4 text-2xl leading-normal mx-auto max-w-[250px] sm:max-w-none italic text-center text-theme-light"
+            class="fade-in uppercase mt-5 md:mt-4 text-2xl leading-tight mx-auto text-center text-theme-light"
           >
-            Twoja Strona - Twój Biznes
+            Strony internetowe<br />
+            <span class="text-theme-accent">które pracują dla&nbsp;ciebie</span>
           </p>
           <nuxt-link
             to="#kontakt"
