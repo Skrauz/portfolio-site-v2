@@ -30,12 +30,12 @@ const publicConfig = useRuntimeConfig().public;
             <span class="text-theme-accent">które pracują dla&nbsp;ciebie</span>
           </p>
           <nuxt-link
-            to="#kontakt"
+            to="#oferta"
             class="fade-in mt-5 md:mt-5 transition-colors hover:bg-theme-accent-hover rounded-full py-1.5 px-6 flex items-center gap-2.5 bg-theme-accent text-theme-dark max-w-max"
             aria-label="Go to contact section"
           >
             <p class="font-bold text-2xl leading-[1.2] tracking-tight">
-              Kontakt
+              Sprawdź ofertę
             </p>
           </nuxt-link>
         </div>
