@@ -63,7 +63,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="common-container" id="doswiadczenie">
+  <article class="common-container" id="doswiadczenie">
     <div
       class="pt-8 mt-16 md:pt-20 md:mt-16 flex gap-4 md:gap-12 min-h-[400px] w-full justify-between mx-auto"
     >
@@ -124,7 +124,7 @@ onMounted(() => {
         <nuxt-img class="w-5" src="/img/stick_2.svg"></nuxt-img>
       </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <style scoped></style>

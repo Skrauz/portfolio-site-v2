@@ -27,7 +27,11 @@ onMounted(() => {
       <NuxtImg class="w-[180px] lg:w-[200px]" src="/img/logo.png" alt="Skrauz.dev logo" />
     </NuxtLink>
     <!-- Desktop Nav -->
-    <div class="items-center gap-8 hidden md:flex">
+    <div class="items-center gap-4 lg:gap-8 hidden md:flex">
+      <NuxtLink to="/#oferta"
+        class="navbar-fade-in text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
+        <span class="text-theme-accent">/</span>Oferta<span class="nav-underline"></span>
+      </NuxtLink>
       <NuxtLink to="/#projekty"
         class="navbar-fade-in text-xl font-bold tracking-tighter relative group nav-link-underline transition-colors ">
         <span class="text-theme-accent">/</span>Projekty <span class="nav-underline"></span>
@@ -74,6 +78,10 @@ onMounted(() => {
         </div>
         <div class="common-container">
           <div class="flex flex-col gap-4">
+            <NuxtLink @click="toggleMobileMenu" to="/#oferta"
+              class="text-xl font-bold tracking-tighter relative group transition-colors hover:text-theme-light">
+              <span class="text-theme-accent">/</span>Oferta
+            </NuxtLink>
             <NuxtLink @click="toggleMobileMenu" to="/#projekty"
               class="text-xl font-bold tracking-tighter relative group transition-colors hover:text-theme-light">
               <span class="text-theme-accent">/</span>Projekty

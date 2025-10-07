@@ -3,7 +3,7 @@ const publicConfig = useRuntimeConfig().public;
 </script>
 <template>
   <div class="mt-20 md:mt-32">
-    <div class="h-[100dvh] common-container" id="kontakt">
+    <article class="h-[100dvh] common-container" id="kontakt">
       <div class="flex flex-col justify-between py-10 h-full items-center">
         <div class="stick-scroll-fade-in relative shrink-0 md:block hidden">
           <nuxt-img class="h-6" src="/img/contact_stick.svg" alt="Decorative stick graphic"></nuxt-img>
@@ -15,8 +15,8 @@ const publicConfig = useRuntimeConfig().public;
           <div class="header-panel flex flex-col items-center">
             <h1 class="scroll-fade-in text-4xl md:text-5xl font-bold leading-[0.9] tracking-[-1px] text-center"> Kontakt </h1>
             <div class="scroll-fade-in text-xl mt-3 text-center font-medium">
-              <p class="">Masz pomysł na <span class="text-theme-accent">interesujący projekt?</span></p>
-              <p class=""><span class="text-theme-accent">Skontaktuj się</span> ze mną!</p>
+              <p class=""><span class="text-theme-accent">Masz pomysł</span> na projekt?</p>
+              <p class="">Jestem ciekaw jak <span class="text-theme-accent">mógłbym pomóc!</span></p>
             </div>
           </div>
           <div class="scroll-fade-in email-panel flex flex-col items-center">
@@ -52,7 +52,7 @@ const publicConfig = useRuntimeConfig().public;
           <nuxt-img class="h-6" src="/img/small_contact_stick.svg" alt="Decorative stick graphic"></nuxt-img>
         </div>
       </div>
-    </div>
+    </article>
   </div>
 </template>
 

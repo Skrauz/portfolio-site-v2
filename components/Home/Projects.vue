@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const projects = [
   {
-    name: "Strona Portfolio v2",
+    name: "Strona Skrauz.dev v2",
     description:
-      "Druga wersja strony portfolio stworzona z myślą o czytelnej i profesjonalnej prezentacji moich projektów.",
+      "Druga wersja mojej strony stworzona z myślą o czytelnej i profesjonalnej prezentacji moich projektów i oferty.",
     image: "/img/projects/portfoliov2.png",
     technologies: ["Nuxt", "TailwindCSS", "SCSS", "Typescript", "GSAP"],
     link: "https://skrauz.dev",
@@ -33,41 +33,7 @@ import { gsap } from "gsap";
 
 import { fadeInAnimation } from "~/composables/fadeInAnim";
 
-const processDescription = (text: string) => {
-  const prepositions = [
-    "w",
-    "z",
-    "na",
-    "do",
-    "od",
-    "za",
-    "po",
-    "dla",
-    "przez",
-    "bez",
-    "pod",
-    "nad",
-    "przy",
-    "między",
-    "przed",
-    "o",
-    "ze",
-    "ze",
-    "a",
-    "i",
-    "lub",
-    "oraz",
-  ];
-
-  let processedText = text;
-
-  prepositions.forEach((prep) => {
-    const regex = new RegExp(`\\s(${prep})\\s`, "gi");
-    processedText = processedText.replace(regex, ` $1&nbsp;`);
-  });
-
-  return processedText;
-};
+import { processText } from '~/utils/textProcessing';
 
 onMounted(() => {
   gsap.utils.toArray(".project-panel").forEach((projectPanel: any) => {
@@ -92,7 +58,7 @@ onMounted(() => {
 <template>
   <div class="common-container" id="projekty">
     <div
-      class="pt-12 mt-8 md:pt-20 md:mt-12 xl:mt-20 flex gap-4 md:gap-12 min-h-[400px] w-full justify-between mx-auto"
+      class="pt-12 mt-12 md:pt-20 md:mt-12 xl:mt-20 flex gap-4 md:gap-12 min-h-[400px] w-full justify-between mx-auto"
     >
       <div class="w-full">
         <h2
@@ -167,7 +133,7 @@ onMounted(() => {
 
               <p
                 class="project-description leading-snug"
-                v-html="processDescription(project.description)"
+                v-html="processText(project.description)"
               ></p>
 
               <nuxt-link

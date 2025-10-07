@@ -1,6 +1,6 @@
 <script setup lang="ts">
 function scrollToNextSection() {
-  const nextSection = document.getElementById("projekty");
+  const nextSection = document.getElementById("oferta");
   if (nextSection) {
     nextSection.scrollIntoView({ behavior: "smooth" });
   }
@@ -40,7 +40,7 @@ const publicConfig = useRuntimeConfig().public;
           </nuxt-link>
         </div>
       </div>
-      <div class="social-links absolute left-8 -mt-3 hidden md:block top-0">
+      <div class="social-links absolute left-8 mt-1 hidden md:block top-0">
         <div class="flex flex-col items-center gap-3">
           <div class="opacity-75 transition-opacity hover:opacity-100">
             <nuxt-link
