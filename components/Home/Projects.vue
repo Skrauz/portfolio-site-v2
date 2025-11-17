@@ -5,7 +5,13 @@ const projects = [
     description:
       "Design i realizacja nowoczesnej, responsywnej strony prezentującej ofertę i specjalizacje kancelarii, zbudowanej głównie w oparciu o WordPress i Elementor.",
     image: "/img/projects/kancelaria-adwokacka-skrauz.png",
-    technologies: ["Wordpress", "Elementor", "CSS", "Penpot", "Local By Flywheel"],
+    technologies: [
+      "Wordpress",
+      "Elementor",
+      "CSS",
+      "Penpot",
+      "Local By Flywheel",
+    ],
     link: "https://skrauz.github.io/portfolio-kancelaria-adwokacka/",
     githubLink: "",
     frame: false,
@@ -43,7 +49,7 @@ import { gsap } from "gsap";
 
 import { fadeInAnimation } from "~/composables/fadeInAnim";
 
-import { processText } from '~/utils/textProcessing';
+import { processText } from "~/utils/textProcessing";
 
 onMounted(() => {
   gsap.utils.toArray(".project-panel").forEach((projectPanel: any) => {
@@ -94,30 +100,7 @@ onMounted(() => {
               class="-z-10 absolute top-0 left-0 md:w-[230px] w-[250px]"
               alt="Decorative frame border"
             ></nuxt-img>
-            <template v-if="project.link">
-              <nuxt-link
-                :to="project.link"
-                target="_blank"
-                class="link-underline project-header flex items-center gap-3 max-w-max"
-                :aria-label="`Visit ${project.name} project`"
-              >
-                <span class="underline"></span>
-                <h3
-                  class="project-name text-2xl md:text-3xl font-bold leading-[0.9] tracking-[-1px] text-center"
-                >
-                  {{ project.name }}
-                </h3>
-                <div class="w-5">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      fill="currentColor"
-                      d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0-201.4 201.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3 448 192c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 96C35.8 96 0 131.8 0 176L0 432c0 44.2 35.8 80 80 80l256 0c44.2 0 80-35.8 80-80l0-80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 80c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l80 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 96z"
-                    />
-                  </svg>
-                </div>
-              </nuxt-link>
-            </template>
-            <template v-else>
+
               <div class="project-header flex items-center gap-3 max-w-max">
                 <h3
                   class="project-name text-2xl md:text-3xl font-bold leading-[0.9] tracking-[-1px] text-center"
@@ -125,7 +108,6 @@ onMounted(() => {
                   {{ project.name }}
                 </h3>
               </div>
-            </template>
             <div class="project-body flex flex-col gap-4 mt-5">
               <div
                 v-if="project.image"
@@ -146,20 +128,43 @@ onMounted(() => {
                 v-html="processText(project.description)"
               ></p>
 
-              <nuxt-link
-                class="link-underline max-w-max mt-2 flex items-center gap-2 text-xl font-bold leading-[0.9] tracking-[-1px]"
-                v-if="project.githubLink"
-                :to="project.githubLink"
-                target="_blank"
-                :aria-label="`View ${project.name} on GitHub`"
-                ><p>Github</p>
-                <nuxt-img
-                  class="w-4"
-                  src="/img/socials/github.svg"
-                  alt="GitHub logo"
-                ></nuxt-img>
-                <span class="underline"></span>
-              </nuxt-link>
+              <div class="flex gap-6">
+                <nuxt-link
+                  class="link-underline max-w-max mt-2 flex items-center gap-2 text-xl font-bold leading-[0.9] tracking-[-1px]"
+                  v-if="project.link"
+                  :to="project.link"
+                  target="_blank"
+                  :aria-label="`Zobacz ${project.name} na żywo`"
+                  ><p>Zobacz na żywo</p>
+                  <div class="w-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0-201.4 201.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3 448 192c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 96C35.8 96 0 131.8 0 176L0 432c0 44.2 35.8 80 80 80l256 0c44.2 0 80-35.8 80-80l0-80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 80c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l80 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 96z"
+                      />
+                    </svg>
+                  </div>
+                  <span class="underline"></span>
+                </nuxt-link>
+
+                <nuxt-link
+                  class="link-underline max-w-max mt-2 flex items-center gap-2 text-xl font-bold leading-[0.9] tracking-[-1px]"
+                  v-if="project.githubLink"
+                  :to="project.githubLink"
+                  target="_blank"
+                  :aria-label="`Zobacz ${project.name} na GitHub`"
+                  ><p>Github</p>
+                  <nuxt-img
+                    class="w-4"
+                    src="/img/socials/github.svg"
+                    alt="GitHub logo"
+                  ></nuxt-img>
+                  <span class="underline"></span>
+                </nuxt-link>
+              </div>
             </div>
             <div class="project-information mt-6">
               <div class="grid grid-cols-2 gap-4">
