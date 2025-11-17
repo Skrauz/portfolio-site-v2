@@ -1,6 +1,16 @@
 <script setup lang="ts">
 const projects = [
   {
+    name: "Projekt Portfolio Kancelarii Adwokackiej",
+    description:
+      "Design i realizacja nowoczesnej, responsywnej strony prezentującej ofertę i specjalizacje kancelarii, zbudowanej głównie w oparciu o WordPress i Elementor.",
+    image: "/img/projects/kancelaria-adwokacka-skrauz.png",
+    technologies: ["Wordpress", "Elementor", "CSS", "Penpot", "Local By Flywheel"],
+    link: "https://skrauz.github.io/portfolio-kancelaria-adwokacka/",
+    githubLink: "",
+    frame: false,
+  },
+  {
     name: "Strona Skrauz.dev v2",
     description:
       "Druga wersja mojej strony stworzona z myślą o czytelnej i profesjonalnej prezentacji moich projektów i oferty.",
