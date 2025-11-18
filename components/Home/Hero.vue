@@ -14,7 +14,7 @@ const publicConfig = useRuntimeConfig().public;
     <div class="relative">
       <div class="common-container">
         <div class="hero flex flex-col items-center">
-          <h1
+          <h2
             class="text-6xl font-bold text-center leading-[0.9] tracking-[-1px] fade-in"
           >
             <span class="text-theme-accent">&nbsp;S</span>ebastian<span
@@ -22,13 +22,13 @@ const publicConfig = useRuntimeConfig().public;
             >
               Krauz</span
             >owicz
-          </h1>
-          <p
+          </h2>
+          <h1
             class="fade-in uppercase mt-5 md:mt-4 text-2xl leading-tight mx-auto text-center text-theme-light"
           >
             Strony internetowe<br />
             <span class="text-theme-accent">które pracują dla&nbsp;ciebie</span>
-          </p>
+          </h1>
           <nuxt-link
             to="#oferta"
             class="fade-in mt-5 md:mt-5 transition-colors hover:bg-theme-accent-hover rounded-full py-1.5 px-6 flex items-center gap-2.5 bg-theme-accent text-theme-dark max-w-max"
