@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ["~/assets/css/main.css"],
   vite: { plugins: [tailwindcss()] },
   modules: ["@nuxt/image", "@nuxtjs/seo"],
@@ -17,8 +17,8 @@ export default defineNuxtConfig({
   site: {
     url: "https://skrauz.dev",
     name: "Sebastian Krauzowicz - Web Developer",
-    description: "Strona portfolio",
-    keywords: ["web developer", "frontend developer", "portfolio", "poland"],
+    description: "Projekty Stron Internetowych - Sebastian Krauzowicz",
+    keywords: ["tworzenie stron internetowych nowy targ", "tworzenie stron internetowych zakopane", "web developer nowy targ", "web developer zakopane", "projekty stron internetowych nowy targ", "projekty stron internetowych zakopane"],
     author: "Sebastian Krauzowicz",
     publisher: "Sebastian Krauzowicz",
     generator: "Nuxt",
@@ -26,7 +26,7 @@ export default defineNuxtConfig({
     canonical: "https://skrauz.dev",
     og: {
       type: "website",
-      title: "Sebastian Krauzowicz - Web Developer",
+      title: "Sebastian Krauzowicz - Projekty Stron Internetowych",
       description: "Strona portfolio",
       url: "https://skrauz.dev",
       image: "/img/ogimage.png"
